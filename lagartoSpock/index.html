@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Piedra, papel, tijera, lagarto, Spock</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="piedra.js"></script>
+</head>
+<body>
+    <div id="contenido">
+        <h1>Piedra, papel, tijera, lagarto, Spock</h1>
+        <div id="juego">
+            <div onclick="usuario('piedra');" id="piedra"></div>
+            <div onclick="usuario('spock');" id="spock"></div>
+            <div onclick="usuario('papel');" id="papel"></div>
+            <div onclick="usuario('lagarto');" id="lagarto"></div>
+            <div onclick="usuario('tijera');" id="tijera"></div>
+
+            <div id="resultados">
+                <h3>Resultados</h3>
+                <p>Maquina <span id="victoriaMaquina">0</span>
+                Usuario <span id="victoriaUsuario">0</span>
+                Empates <span id="Empate">0</span></p>
+            </div>
+        </div>
+        <div id="informacion">
+            <p><a href="#">Repositorio en Github</a> — <a href="https://www.youtube.com/watch?v=Y6GPW1vUaqU">Reglas del juego</a>.</p>
+            <p>Por <a href="http://twitter.com/edgardoalz">Edgardo Alz</a> para el curso de programación básica de <a href="https://cursos.mejorando.la/programacion-basica/">Mejorando.la</a></p>
+        </div>
+
+    </div>
+
+    <div id="blur" style="display:none" onclick="quitarBlur();">
+        <h2>Texto</h2>
+    </div>
+</body>
+</html>
