@@ -9,22 +9,9 @@
 <body>
     <div id="contenido">
         <h1>Piedra papel tijera lagarto Spock</h1>
-        <div id="juego">
-            <div onclick="usuario('piedra');" id="piedra"></div>
-            <div onclick="usuario('spock');" id="spock"></div>
-            <div onclick="usuario('papel');" id="papel"></div>
-            <div onclick="usuario('lagarto');" id="lagarto"></div>
-            <div onclick="usuario('tijera');" id="tijera"></div>
-
-            <div id="resultados">
-                <h3>Resultados</h3>
-                <p>Maquina <span id="victoriaMaquina">0</span>
-                Usuario <span id="victoriaUsuario">0</span>
-                Empates <span id="Empate">0</span></p>
-            </div>
-        </div>
         <div id="informacion">
-            <p><a href="https://github.com/edgardoalz/mejorandola/">Github</a> —
+            <p><a href="http://edgardoalz.github.io/mejorandola/lagarto-spock/">Nueva direccion</a> —
+            <a href="https://github.com/edgardoalz/mejorandola/">Github</a> —
             <a href="https://www.youtube.com/watch?v=Y6GPW1vUaqU">Reglas del juego</a>.</p>
             <p>Por <a href="http://twitter.com/edgardoalz">Edgardo Alz</a> para
             <a href="https://cursos.mejorando.la/programacion-basica/">Mejorando.la</a> programación.</p>
@@ -37,7 +24,18 @@
     </div>
 
     <script type="text/javascript">
-        inicio();
+
+    var pagina = 'http://edgardoalz.github.io/mejorandola/lagarto-spock/';
+    var segundos = 5;
+
+    function redireccion() {
+
+    document.location.href=pagina;
+
+    }
+
+    setTimeout(redireccion(),segundos);
+
     </script>
 
 </body>
