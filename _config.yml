@@ -6,6 +6,10 @@ description: "Desarrollador de software en Los Mochis, Sinaloa."
 baseurl:     ""
 url:         "http://edgardoalz.github.io"
 
+# Otras configuraciones
+timezone:    America/Mazatlan
+encoding:    "utf-8"
+    
 # Google analytics
 google_analytics:
 
