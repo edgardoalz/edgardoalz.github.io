@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Acerca de Edgardo Alz 
-permalink: /acerca-de.html
+permalink: /acerca-de/
 ---
 ## Autor
 Este es el blog de **Edgardo Alz** sobre desarrollo,software libre y mas temas 
