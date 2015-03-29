@@ -619,8 +619,8 @@ body {
 
 html, body {
   height: 100%;
-  background: #000;
-  color: #aaa; }
+  background: #fff;
+  color: #333; }
 
 img {
   width: auto;
@@ -651,15 +651,15 @@ body {
   width: 100%; }
 
 .site-header a {
-  color: #ccc;
+  color: #333;
   font-weight: bold; }
 
 .site-header nav a {
   font-size: 1rem;
-  color: #999; }
+  color: #444; }
 
 .site-header nav a:hover {
-  color: #eee;
+  color: #444;
   opacity: 1;
   border-bottom: 2px solid #444; }
 
@@ -727,7 +727,7 @@ table {
 .post-link .post-title {
   margin-top: 0;
   font-weight: 600;
-  color: #aaa; }
+  color: #111; }
 
 .post-footer {
   margin-top: .75rem;
@@ -749,17 +749,17 @@ table {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background: #333;
+  background: #ddd;
   border-radius: 0.1875em;
-  border: 1px solid #333;
-  color: #aaa;
+  border: 1px solid #aaa;
+  color: #666;
   padding: 1em 1.5em; }
 
 .pagination .disabled {
   opacity: 0.5; }
 
 .pagination a:hover, .pagination a:focus {
-  background: #ccc;
+  background: #999;
   color: #477dca; }
 
 .pagination a:active {
@@ -804,7 +804,7 @@ textarea.input {
 p {
   font-weight: 300;
   line-height: 1.5;
-  color: #999; }
+  color: #444; }
 
 abbr {
   border-bottom: 1px black dotted;
@@ -835,7 +835,7 @@ blockquote {
 blockquote footer {
   font-size: .85rem;
   font-style: normal;
-  background-color: #222;
+  background-color: #fafafa;
   color: #7a7a7a;
   border-color: transparent; }
 
@@ -917,7 +917,7 @@ h6,
   .posts .post {
     margin-bottom: 1.333em;
     padding-bottom: 0.666em;
-    border-bottom: thin solid #222; }
+    border-bottom: thin solid #eee; }
 
   .posts .post:last-child {
     border-bottom: none;
@@ -987,7 +987,7 @@ h6,
   .posts .post {
     margin-bottom: 2.666em;
     padding-bottom: 1.333em;
-    border-bottom: thin solid #222; }
+    border-bottom: thin solid #ddd; }
 
   .posts .post:last-child {
     border-bottom: none;
@@ -1001,12 +1001,12 @@ h6,
   font-size: 1.3em; }
 
 footer {
-  border-top: thin solid #222; }
+  border-top: thin solid #ddd; }
 
 footer,
 footer .wrap {
-  color: #ccc;
-  background-color: #111;
+  color: #444;
+  background-color: #fff;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
   clear: both; }
