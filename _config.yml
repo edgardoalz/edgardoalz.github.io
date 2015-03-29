@@ -46,6 +46,9 @@ share_tumblr: false
 share_reddit: false
 share_stumbleupon: false
 
+
+#gems:
+#    - jekyll-archives
 # Build settings
 markdown:     redcarpet
 redcarpet:
