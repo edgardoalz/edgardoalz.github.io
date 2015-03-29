@@ -4,7 +4,7 @@ title: Acerca de Edgardo Alz
 permalink: /acerca-de/
 ---
 ### Autor
-Este es el blog de **Edgardo Alz** sobre desarrollo,software libre y mas temas 
+Este es el blog de __Edgardo Alz__ sobre desarrollo,software libre y mas temas 
 relacionados con tecnologia, hardware y otros que despiertan el interes del autor.
 
 ### Contacto
