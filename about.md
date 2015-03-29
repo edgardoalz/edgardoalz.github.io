@@ -3,15 +3,16 @@ layout: page
 title: Acerca de Edgardo Alz 
 permalink: /acerca-de/
 ---
-## Autor
+### Autor
 Este es el blog de **Edgardo Alz** sobre desarrollo,software libre y mas temas 
 relacionados con tecnologia, hardware y otros que despiertan el interes del autor.
 
-## Contacto
+### Contacto
 * Correo electronico: [edgardoalz@outlook.com](mailto:edgardoalz@outlook.com)
 * Twitter: @[edgardoalz](http://twitter.com/edgardoalz)
 
-## El blog esta creado con:
-* [Antergos](http://antergos.com)
-* [Jekyll](http://jekyllrb.com)
-* [Vim](http://vim.org)
+### El blog esta creado con:
+* [Sistema operativo GNU/Linux Antergos](http://antergos.com)
+* [Generador de sitios estatico Jekyll](http://jekyllrb.com)
+* [Editor de codigo Vim](http://vim.org)
+* [Tema Pixyll](http://pixyll.com)
