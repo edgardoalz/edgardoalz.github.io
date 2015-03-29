@@ -1,4 +1,4 @@
-# Siste settings
+#Siste settings
 title:       Edgardo Alz
 email:       edgardoalz@outlook.com
 author:      Edgardo Alz 
@@ -48,6 +48,6 @@ redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    /:year/:month/:title.html
 paginate:     3
-paginate_path: "/blog/pagina:num.html"
+paginate_path: "/pagina:num.html"
 sass:
   compressed: true
