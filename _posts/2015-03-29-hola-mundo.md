@@ -16,7 +16,7 @@ respecto a este tema u otros relacionados con tecnlogia.
 {% highlight c %}
 #include <stdio.h>
 
-int main(int argc, char argv[]) {
+int main(int argc, char* argv[]) {
     
     printf("¡Hola mundo!\n");
     return 0;
