@@ -2,7 +2,7 @@
 layout:     post
 title:      ¡Hola mundo!
 date:       2015-03-29 04:49:19
-summary:    Primer articulo de este nuevo blog.
+summary:    Hola mundo, empieza este blog, como registro de aprendizaje sobre programación, estoy cursando actualmente la carrera de ingeniería de software, por lo que quiero llevar un registro de lo que vaya aprendiendo o experimentando
 categories: jekyll blog 
 ---
 
