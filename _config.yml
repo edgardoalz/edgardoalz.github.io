@@ -4,7 +4,7 @@ email:       edgardoalz@outlook.com
 author:      Edgardo Alz 
 description: "Desarrollador de software en Los Mochis, Sinaloa."
 baseurl:     ""
-url:         "http://localhost:4000"
+url:         "http://edgardoalz.github.io"
 
 # Google analytics
 google_analytics:
