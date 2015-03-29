@@ -4,7 +4,7 @@
       {% if paginator.page == 2 %}
         <a class="pagination-item" href="{{ site.baseurl }}/">Recientes</a>
       {% else %}
-        <a class="pagination-item" href="{{ site.baseurl }}/pagina{{paginator.previous_page}}.html">Recientes</a>
+        <a class="pagination-item" href="{{ site.baseurl }}/p{{paginator.previous_page}}.html">Recientes</a>
       {% endif %}
     {% else %}
       <span class="pagination-item disabled">Recientes</span>
@@ -12,7 +12,7 @@
   </div>
   <div class="right">
     {% if paginator.next_page %}
-      <a class="pagination-item" href="{{ site.baseurl }}/pagina{{paginator.next_page}}.html">Anteriores</a>
+      <a class="pagination-item" href="{{ site.baseurl }}/p{{paginator.next_page}}.html">Anteriores</a>
     {% else %}
       <span class="pagination-item disabled">Anteriores</span>
     {% endif %}
