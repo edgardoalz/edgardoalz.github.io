@@ -48,6 +48,6 @@ redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    /:year/:month/:title.html
 paginate:     3
-paginate_path: "/pagina:num.html"
+paginate_path: /p:num.html
 sass:
   compressed: true
