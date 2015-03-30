@@ -7,12 +7,16 @@
     <atom:link href="http://edgardoalz.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Probando Prose.io</title>
-        <description>&lt;p&gt;En los ultimos dias he estado jugando un poco con &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; para crear este blog, y recientemente descubri &lt;a href=&quot;http://prose.io&quot;&gt;Prose.io&lt;/a&gt; que te ofrece una interfase, al estilo CMS para gestionar sitios creados en Jekyll o en general proyectos que se generen a partir de archivos escritos en &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;. &lt;/p&gt;
+        <title>Probando Prose</title>
+        <description>&lt;p&gt;En los ultimos dias he estado jugando un poco con &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; 
+para crear este blog, y recientemente descubri &lt;a href=&quot;http://prose.io&quot;&gt;Prose&lt;/a&gt; que 
+te ofrece una interfase, al estilo CMS para gestionar sitios creados en Jekyll 
+o en general proyectos que se generen a partir de archivos escritos en 
+&lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;. &lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Mar 2015 10:14:20 -0700</pubDate>
-        <link>http://edgardoalz.github.io/2015/03/probando-prose-io/</link>
-        <guid isPermaLink="true">http://edgardoalz.github.io/2015/03/probando-prose-io/</guid>
+        <link>http://edgardoalz.github.io/2015/03/probando-prose/</link>
+        <guid isPermaLink="true">http://edgardoalz.github.io/2015/03/probando-prose/</guid>
       </item>
     
       <item>
