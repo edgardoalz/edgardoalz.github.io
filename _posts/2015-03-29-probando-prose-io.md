@@ -2,7 +2,7 @@
 layout:     post
 title:      Probando Prose.io
 date:       2015-03-29 17:14:20
-summary:    En los ultimos dias he estado jugando un poco con [Jekyll](http://jekyllrb.com) para crear este blog.
+summary:    En los ultimos dias he estado jugando un poco con Jekyll para crear este blog.
 categories: jekyll blog
 ---
 
