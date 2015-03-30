@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Acerca de Edgardo Alz 
-permalink: /acerca-de/
+title: Acerca del sitio
+permalink: "/acerca-de/"
+published: true
 ---
+
 ### Autor
-Este es el blog de __Edgardo Alz__ sobre desarrollo,software libre y mas temas 
-relacionados con tecnologia, hardware y otros que despiertan el interes del autor.
+Este es el blog de __Edgardo Alz__ sobre desarrollo,software libre y más temas 
+relacionados con tecnología, hardware y otros que despiertan el interes del autor.
 
 ### Contacto
 * Correo electronico: [edgardoalz@outlook.com](mailto:edgardoalz@outlook.com)
