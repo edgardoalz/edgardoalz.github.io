@@ -17,11 +17,11 @@ layout: default
             {% else %}
               {{ post.excerpt }}
             {% endif %}
-          </p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-            Continuar leyendo ->
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            Continuar leyendo→
           </a>
-      </div>
+          </p>
+       </div>
     {% endfor %}
   </div>
 
