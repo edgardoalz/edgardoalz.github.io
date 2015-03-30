@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Acerca de Edgardo Alz
+title: Acerca del sitio
 permalink: "/acerca-de/"
 published: true
 ---
