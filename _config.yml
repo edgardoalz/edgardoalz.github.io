@@ -3,7 +3,7 @@ title:       Edgardo Alz
 email:       edgardoalz@outlook.com
 author:      Edgardo Alz 
 description: "Desarrollador de software en Los Mochis, Sinaloa."
-host:        127.0.0.1
+host:        localhost 
 port:        4000
 baseurl:     ""
 url:         "http://edgardoalz.github.io"
