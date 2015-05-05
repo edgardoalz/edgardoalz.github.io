@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Acerca del sitio
-permalink: "/acerca-de.html"
+permalink: "/acerca-de/"
 published: true
 ---
 

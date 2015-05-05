@@ -55,7 +55,7 @@ share_stumbleupon: false
 markdown:     redcarpet
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    /:year/:month/:title.html
+permalink:    /:year/:month/:title/
 paginate:     3
 paginate_path: /pagina-:num/
 sass:

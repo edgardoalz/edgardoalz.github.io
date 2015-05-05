@@ -7,6 +7,15 @@
     <atom:link href="http://edgardoalz.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Google App Engine</title>
+        <description>&lt;p&gt;Para el fin de semestre tengo varios proyectos por entregar, algunos interesantes, otros no tanto, de los que se puede mencionar, en clase de programación orientada a objetos se nos encargo hacer un videojuego, en el que implementemos todos los conceptos aprendidos en clase, por otra parte tuvimos que realizar un proyecto de ingenieria de software en el que debiamos tener a un cliente (empresa o profesionista) al que desarrollaramos una aplicación (o modulo dependiendo de la complejidad) y por mi parte elegí realizar una aplicación web, y desde hace tiempo tenia la curiosidad por utilizar &lt;a href=&quot;https://appengine.google.com&quot;&gt;Google App Engine&lt;/a&gt; y como lenguaje utilizare &lt;a href=&quot;http://golang.org&quot;&gt;Go&lt;/a&gt; ademas de Cloud Datastorage para la base de datos, por lo que he estado aprendiendo diversas cosas muy interesantes.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Apr 2015 15:50:21 -0600</pubDate>
+        <link>http://edgardoalz.github.io/2015/04/google-app-engine.html</link>
+        <guid isPermaLink="true">http://edgardoalz.github.io/2015/04/google-app-engine.html</guid>
+      </item>
+    
+      <item>
         <title>Halt and Catch Fire</title>
         <description>&lt;p&gt;Esta semana &lt;a href=&quot;https://geekytheory.com/un-referente-geek-cameron-howe/&quot;&gt;lei&lt;/a&gt; sobre &lt;a href=&quot;http://www.amctv.com/shows/halt-and-catch-fire&quot;&gt;esta serie de AMC&lt;/a&gt; que se estrenó el año pasado, la cual se situa en la epoca de los años 80 donde empezó el boom de las computadoras personales, muchos entusiastas y empresas, como los protagonistas de la serie se aventuraron a crear su propia computadora, tiene todos los elementos como para convertirse en una serie de culto para los apasiandos de la computación, por lo que la recomiendo enormemente. Solamente cuenta con una temporada hasta el momento pero ya esta anunciada una segunda para este verano.&lt;/p&gt;
 </description>
