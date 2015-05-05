@@ -7,6 +7,15 @@
     <atom:link href="http://edgardoalz.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Halt and Catch Fire</title>
+        <description>&lt;p&gt;Esta semana &lt;a href=&quot;https://geekytheory.com/un-referente-geek-cameron-howe/&quot;&gt;lei&lt;/a&gt; sobre &lt;a href=&quot;http://www.amctv.com/shows/halt-and-catch-fire&quot;&gt;esta serie de AMC&lt;/a&gt; que se estrenó el año pasado, la cual se situa en la epoca de los años 80 donde empezó el boom de las computadoras personales, muchos entusiastas y empresas, como los protagonistas de la serie se aventuraron a crear su propia computadora, tiene todos los elementos como para convertirse en una serie de culto para los apasiandos de la computación, por lo que la recomiendo enormemente. Solamente cuenta con una temporada hasta el momento pero ya esta anunciada una segunda para este verano.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Apr 2015 09:04:20 -0600</pubDate>
+        <link>http://edgardoalz.github.io/2015/04/halt-and-catch-fire.html</link>
+        <guid isPermaLink="true">http://edgardoalz.github.io/2015/04/halt-and-catch-fire.html</guid>
+      </item>
+    
+      <item>
         <title>Probando Prose</title>
         <description>&lt;p&gt;En los ultimos dias he estado jugando un poco con &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; 
 para crear este blog, y recientemente descubri &lt;a href=&quot;http://prose.io&quot;&gt;Prose&lt;/a&gt; que 
@@ -15,8 +24,8 @@ o en general proyectos que se generen a partir de archivos escritos en
 &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;. &lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Mar 2015 10:14:20 -0700</pubDate>
-        <link>http://edgardoalz.github.io/2015/03/probando-prose/</link>
-        <guid isPermaLink="true">http://edgardoalz.github.io/2015/03/probando-prose/</guid>
+        <link>http://edgardoalz.github.io/2015/03/probando-prose.html</link>
+        <guid isPermaLink="true">http://edgardoalz.github.io/2015/03/probando-prose.html</guid>
       </item>
     
       <item>
@@ -36,8 +45,8 @@ respecto a este tema u otros relacionados con tecnlogia.&lt;/p&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
         <pubDate>Sat, 28 Mar 2015 21:49:19 -0700</pubDate>
-        <link>http://edgardoalz.github.io/2015/03/hola-mundo/</link>
-        <guid isPermaLink="true">http://edgardoalz.github.io/2015/03/hola-mundo/</guid>
+        <link>http://edgardoalz.github.io/2015/03/hola-mundo.html</link>
+        <guid isPermaLink="true">http://edgardoalz.github.io/2015/03/hola-mundo.html</guid>
       </item>
     
   </channel>
