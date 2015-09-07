@@ -37,7 +37,7 @@ flattr_button:
 
 # Post sharing icons
 show_sharing_icons: false 
-share_text: 'Comparte este articulo!'
+share_text: '¡Comparte este articulo!'
 # Change to 'true' to enable individual icons
 share_facebook: true
 share_twitter: true 
