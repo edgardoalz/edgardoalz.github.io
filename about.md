@@ -16,5 +16,5 @@ relacionados con tecnología, hardware y otros que despiertan el interes del aut
 ### El blog esta creado con:
 * Sistema operativo [GNU/Linux Antergos](http://antergos.com)
 * Generador de sitios estáticos [Jekyll](http://jekyllrb.com)
-* Editor de código [Vim](http://vim.org)
+* Editor de código [Vim](http://www.vim.org)
 * Tema para Jekyll [Pixyll](http://pixyll.com)
