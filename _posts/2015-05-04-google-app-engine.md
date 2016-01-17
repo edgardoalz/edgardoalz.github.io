@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Google App Engine
-date:       2016-01-04 21:50:21
+date:       2015-05-04 21:50:21
 summary:    Para el fin de semestre tengo varios proyectos por entregar, algunos interesantes, otros no tanto, de los que se puede mencionar.
 categories: programacion universidad
 ---
