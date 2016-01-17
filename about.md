@@ -1,12 +1,10 @@
 ---
 layout: page
-title: Acerca del sitio
-permalink: "/acerca-de/"
-published: true
+title: Del autor
+permalink: /autor/
 ---
 
-### Autor
-Este es el blog de __Edgardo Alz__ sobre desarrollo,software libre y más temas 
+Este es el blog de __Edgardo Alz__ sobre desarrollo, software libre y más temas 
 relacionados con tecnología, hardware y otros que despiertan el interes del autor.
 
 ### Contacto
@@ -14,7 +12,6 @@ relacionados con tecnología, hardware y otros que despiertan el interes del aut
 * Twitter: @[edgardoalz](http://twitter.com/edgardoalz)
 
 ### El blog esta creado con:
-* Sistema operativo [GNU/Linux Antergos](http://antergos.com)
+* Sistema operativo [Funtoo GNU/Linux](http://funtoo.org)
 * Generador de sitios estáticos [Jekyll](http://jekyllrb.com)
-* Editor de código [Vim](http://vim.org)
-* Tema para Jekyll [Pixyll](http://pixyll.com)
+* Editor de código [Vim](http://www.vim.org)

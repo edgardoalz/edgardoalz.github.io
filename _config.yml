@@ -1,62 +1,15 @@
-#Siste settings
-title:       Edgardo Alz
-email:       edgardoalz@outlook.com
-author:      Edgardo Alz 
-description: "Desarrollador de software en Los Mochis, Sinaloa."
-host:        localhost 
-port:        4000
-baseurl:     ""
-url:         "http://edgardoalz.github.io"
+# Site settings
+title: Edgardo Alz
+email: edgardaolz@outlook.com
+description: > # this means to ignore newlines until "baseurl:"
+  Programacion, tecnologia y software libre.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://edgardoalz.github.io" # the base hostname & protocol for your site
+twitter_username: edgardaolz
+github_username:  edgardoalz
 
-# Otras configuraciones
-timezone:    America/Mazatlan
-encoding:    "utf-8"
-    
-# Google analytics
-google_analytics:
-
-# Optional features
-animated:           false
-show_related_posts: false 
-show_post_footers:  false 
-
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname:
-
-# Social icons
-show_social_icons: false
-github_username: edgardoalz
-stackoverflow_id:
-twitter_username: edgardoalz
-google_plus_id:
-linkedin_username:
-bitcoin_url:
-paypal_url:
-flattr_button:
-
-# Post sharing icons
-show_sharing_icons: false 
-share_text: '¡Comparte este articulo!'
-# Change to 'true' to enable individual icons
-share_facebook: true
-share_twitter: true 
-share_googleplus: true
-share_linkedin: false
-share_digg: false
-share_tumblr: false
-share_reddit: false
-share_stumbleupon: false
-
-
-#gems:
-#    - jekyll-archives
 # Build settings
-markdown:     redcarpet
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
+markdown: kramdown
 permalink:    /:year/:month/:title/
-paginate:     3
-paginate_path: /pagina-:num/
-sass:
-  compressed: true
+# paginate:     3
+# paginate_path: /pagina-:num/
