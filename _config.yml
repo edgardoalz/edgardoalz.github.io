@@ -11,5 +11,19 @@ github_username:  edgardoalz
 # Build settings
 markdown: kramdown
 permalink:    /:year/:month/:title/
-# paginate:     3
+highlighter: rouge
+paginate:     5
 # paginate_path: /pagina-:num/
+
+# gems:
+#   - jekyll-archives
+
+# jekyll-archives:
+#   enabled: all
+#   layout: 'archive'
+#   permalinks:
+#     year: '/:year/'
+#     month: '/:year/:month/'
+#     day: '/:year/:month/:day/'
+#     tag: '/etiqueta/:name/'
+#     category: '/categoria/:name/'

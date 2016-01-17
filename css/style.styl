@@ -21,6 +21,9 @@ a
 	text-decoration none
 	&:hover
 		color rojo
+		
+pre
+	font-size: 0.8em
 
 #contenido
 	margin-left 2em
@@ -103,6 +106,16 @@ a
 		padding 0 1%
 		width 78%
 		float right
+		
+		article
+			a
+			ul li a
+				color azul
+				border-bottom 1px solid #ddd
+				font-weight normal
+				&:hover
+					color #000
+					border-bottom 1px solid #aaa
 
 		article.ultimo_articulo
 			font-size 18px
@@ -119,6 +132,8 @@ a
 
 				a
 					color rojo
+					font-weight bold
+					border 0
 					&:hover
 						color #000
 			span.fecha_articulo
@@ -145,6 +160,7 @@ a
 
 		article.lista_articulos
 			margin 1.5em 0
+
 			h3
 				display inline
 				font-size 1.2em
@@ -152,6 +168,8 @@ a
 
 				a
 					color rojo
+					font-weight bold
+					border 0
 			span.fecha_articulo
 				padding 0.2em
 				font-family Lato, Arial
@@ -164,15 +182,10 @@ a
 				display inline
 				font-size 14px
 				line-height 20px
-				a
-					color azul
-					border-bottom 1px solid #ddd
-					font-weight bold
-					&:hover
-						color #000
-						border-bottom 1px solid #aaa
+				
 				a.seguir_leyendo
 					color #111
+					font-weight bold
 					&:after
 						content "→"
 
