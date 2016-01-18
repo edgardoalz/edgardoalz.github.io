@@ -2,7 +2,7 @@
 layout: default
 ---
 
-    {% for post in site.posts %}
+    {% for post in site.posts limit:4 %}
       {% if forloop.first %}
         <article class="ultimo_articulo">
           <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
