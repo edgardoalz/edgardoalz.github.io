@@ -119,6 +119,25 @@ pre {
   color: #000;
   border-bottom: 1px solid #aaa;
 }
+#contenido section a.compartir_articulo {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+#contenido section .articulo_navegacion {
+  display: block;
+  font-size: 0.8em;
+}
+#contenido section .articulo_navegacion a {
+  color: #111;
+  font-weight: bold;
+}
+#contenido section .articulo_navegacion a.anterior:before {
+  content: "←";
+}
+#contenido section .articulo_navegacion a.siguiente:after {
+  content: "→";
+}
 #contenido section article.ultimo_articulo {
   font-size: 18px;
   margin: 1em 0;
