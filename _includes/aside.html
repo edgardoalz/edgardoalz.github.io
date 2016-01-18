@@ -1,6 +1,6 @@
 <aside>
   <ul>
-    <li class="activo"><a href="{{ "/" | prepend: site.baseurl }}">Inicio</a></li>
+    <li><a href="{{ "/" | prepend: site.baseurl }}">Inicio</a></li>
     {% for page in site.pages %}
       {% if page.title %}
       <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
