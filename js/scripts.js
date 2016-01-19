@@ -21,7 +21,7 @@ function paginaActiva() {
                     elementos[i].className = "activo";
                     break;
                 
-                } else if (url === "/archivos/") {
+                } else if (url === "/archivo/") {
                     archivos = elementos[i];
                 }
             }
