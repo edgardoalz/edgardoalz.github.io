@@ -1,11 +1,11 @@
 <aside>
   <ul id="menu">
-    <li><a href="{{ "/" | prepend: site.baseurl }}">Portada</a></li>
+    <li><a href="{{ "/" | prepend: site.baseurl }}">Inicio</a></li>
     {% for page in site.pages %}
       {% if page.title %}
       <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
       {% endif %}
     {% endfor %}
-      <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed RSS</a></li>
+    <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
   </ul>
 </aside>

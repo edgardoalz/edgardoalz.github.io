@@ -14,8 +14,8 @@ layout: default
         <article class="lista_articulos">
           <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
           <span class="fecha_articulo">{{ post.date | date: "%d %b %Y" }}</span>
-          {{ post.excerpt }}
-          <p><a href="{{ post.url | prepend: site.baseurl }}" class="seguir_leyendo">Seguir leyendo</a></p>
+          {{ post.summary }}
+          <p> <a href="{{ post.url | prepend: site.baseurl }}" class="seguir_leyendo">Seguir leyendo</a></p>
         </article>
       {% endif %}
       

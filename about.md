@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Del autor
+title: Autor
 permalink: /autor/
 ---
 

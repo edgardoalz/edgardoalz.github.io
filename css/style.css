@@ -90,7 +90,7 @@ pre {
 #contenido header form input[type="text"] {
   border: solid 1px #ddd;
   padding: 0.2em;
-  margin: 0;
+  margin: 0 0 0 0;
 }
 #contenido header form input[type="button"] {
   background: #111;
@@ -98,7 +98,7 @@ pre {
   border: 1px solid #333;
   padding: 0.2em 0.5em;
   font-size: 0.9em;
-  margin: 0;
+  margin: -1em 0 1em 0;
   font-weight: bold;
 }
 #contenido section {
@@ -133,10 +133,10 @@ pre {
   font-weight: bold;
 }
 #contenido section .articulo_navegacion a.anterior:before {
-  content: "←";
+  content: "← ";
 }
 #contenido section .articulo_navegacion a.siguiente:after {
-  content: "→";
+  content: " →";
 }
 #contenido section article.ultimo_articulo {
   font-size: 18px;
@@ -218,7 +218,7 @@ pre {
   font-weight: bold;
 }
 #contenido section article.lista_articulos p a.seguir_leyendo:after {
-  content: "→";
+  content: " →";
 }
 #contenido aside {
   float: left;
@@ -256,7 +256,7 @@ pre {
   font-weight: bold;
 }
 #contenido .mas_articulos a:before {
-  content: "←";
+  content: "← ";
 }
 #contenido footer {
   border-top: 1px solid #ddd;
@@ -273,10 +273,10 @@ pre {
   font-weight: bold;
 }
 #contenido footer .licencia:before {
-  content: "—";
+  content: "— ";
 }
 #contenido footer .arriba:after {
-  content: "↑";
+  content: " ↑";
 }
 .left {
   float: left;
