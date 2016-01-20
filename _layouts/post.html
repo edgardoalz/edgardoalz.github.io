@@ -3,26 +3,15 @@ layout: default
 ---
 <article class="ultimo_articulo">
   <h2>{{ page.title }}</h2>
-  <span class="fecha_articulo">
-    {{ page.date | date: "%d " }}
-      {% include month.html %}
-    {{ page.date | date: " %Y" }}
-  </span>
+  <span class="fecha_articulo">{{ page.date | date: "%d " }}{% include month.html %}{{ page.date | date: " %Y" }}</span>
   <!-- <div class="compartir_articulo"> -->
 <!--   <a class="compartir_articulo" href="http://www.facebook.com/sharer.php?u={{ page.url | prepend: site.url }}"><img src="{{ "/img/fb-compartir.png" | prepend: site.baseurl }}" height="20" width="64" border="0" alt="Compartir en Facebook" title="Compartir en Facebook" /></a>
-
-
   <a class="compartir_articulo" href="https://twitter.com/intent/tweet?text={{ page.title }} — {{ site.title }} {{ page.url | prepend: site.url }}"><img src="{{ "/img/tweet.png" | prepend: site.baseurl }}" height="20" width="67" border="0" alt="Tuitear" title="Tuitear" /></a> -->
 <!-- </div> -->
   {{ content }}
-
   <div class="articulo_navegacion">
-      {% if page.previous.url %}
-        <a class="anterior" href="{{page.previous.url}}">{{page.previous.title}}</a>
-      {% endif %}
-      {% if page.next.url %}
-        <a class="siguiente right" href="{{page.next.url}}">{{page.next.title}}</a>
-      {% endif %}
+      {% if page.previous.url %}<a class="anterior" href="{{page.previous.url}}">{{page.previous.title}}</a>{% endif %}
+      {% if page.next.url %}<a class="siguiente right" href="{{page.next.url}}">{{page.next.title}}</a>{% endif %}
   </div>
 </article>
 
