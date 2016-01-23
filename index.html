@@ -1,23 +1,24 @@
 ---
 layout: default
 ---
-    {% for post in site.posts limit:5 %}
-      {% if forloop.first %}
+{% for post in site.posts limit:5 %}
+    {% if forloop.first %}
         <article class="ultimo_articulo">
-          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          <span class="fecha_articulo">{{ post.date | date: "%d " }}{% include month.html %}{{ post.date | date: " %Y" }}</span>
-          {{ post.content }}
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            <span class="fecha_articulo">{{ post.date | date: "%d " }}{% include month.html %}{{ post.date | date: " %Y" }}</span>
+            {{ post.content }}
         </article>
-        <h2 class="recientes">Articulos recientes</h2>
-      {% else %}  
+            <h2 class="recientes">Articulos recientes</h2>
+            {% else %}  
         <article class="lista_articulos">
-          <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-          <span class="fecha_articulo">{{ post.date | date: "%d " }}{% include month.html %}{{ post.date | date: " %Y" }}</span>
-          {{ post.summary }}
-          <p> <a href="{{ post.url | prepend: site.baseurl }}" class="seguir_leyendo">Seguir leyendo</a></p>
+            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <span class="fecha_articulo">{{ post.date | date: "%d " }}{% include month.html %}{{ post.date | date: " %Y" }}</span>
+            {{ post.summary }}
+            <p> <a href="{{ post.url | prepend: site.baseurl }}" class="seguir_leyendo">Seguir leyendo</a></p>
         </article>
-      {% endif %}
-    {% endfor %}
-    <div class="mas_articulos">
-      <a href="{{ "/archivo/" | prepend: site.baseurl }}">Mas articulos</a>
-    </div>
+    {% endif %}
+{% endfor %}
+
+<div class="mas_articulos">
+    <a href="{{ "/archivo/" | prepend: site.baseurl }}">Mas articulos</a>
+</div>
