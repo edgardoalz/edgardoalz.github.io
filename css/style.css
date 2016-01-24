@@ -190,13 +190,16 @@ pre {
 }
 #contenido section article.lista_articulos h3 {
   display: inline;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Merriweather", Cambria;
 }
 #contenido section article.lista_articulos h3 a {
   color: #ab2815;
   font-weight: bold;
   border: 0;
+}
+#contenido section article.lista_articulos h3 a:hover {
+  color: #000;
 }
 #contenido section article.lista_articulos span.fecha_articulo {
   padding: 0.2em;
@@ -254,9 +257,14 @@ pre {
 }
 #contenido .mas_articulos a {
   font-weight: bold;
+  border-bottom: 1px solid #ddd;
 }
 #contenido .mas_articulos a:before {
   content: "← ";
+}
+#contenido .mas_articulos a:hover {
+  color: #000;
+  border-bottom: 1px solid #aaa;
 }
 #contenido footer {
   border-top: 1px solid #ddd;
@@ -271,6 +279,9 @@ pre {
 #contenido footer a {
   color: #000;
   font-weight: bold;
+}
+#contenido footer a:hover {
+  border-bottom: 1px solid #aaa;
 }
 #contenido footer .licencia:before {
   content: "— ";
