@@ -122,7 +122,10 @@ pre {
 #contenido section a.compartir_articulo {
   border: 0;
   padding: 0;
-  margin: 0;
+  margin: 5px 0;
+}
+#contenido section a.compartir_articulo:hover {
+  border: 0;
 }
 #contenido section .articulo_navegacion {
   display: block;
