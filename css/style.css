@@ -130,6 +130,7 @@ pre {
 #contenido section .articulo_navegacion {
   display: block;
   font-size: 0.8em;
+  margin: 10px 0 0;
 }
 #contenido section .articulo_navegacion a {
   color: #111;
