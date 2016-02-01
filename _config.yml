@@ -11,7 +11,7 @@ github_username:  edgardoalz
 # Build settings
 markdown: kramdown
 permalink:    /:year/:month/:title/
-highlighter: pygments
+highlighter: rouge 
 # paginate:     5
 # paginate_path: /pagina-:num/
 
