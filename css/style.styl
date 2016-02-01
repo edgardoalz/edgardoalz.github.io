@@ -3,6 +3,7 @@
 rojo = #AB2815
 // azul = #2455C3
 azul = #0435A3
+negro = #000000
 
 
 body
@@ -119,11 +120,14 @@ pre
 		a.compartir_articulo
 			border 0
 			padding 0
-			margin 0
+			margin 5px 0
+			&:hover
+				border 0
 			
 		.articulo_navegacion
 			display block
 			font-size 0.8em
+			margin 10px 0 0
 			a
 				color #111
 				font-weight bold
@@ -180,13 +184,16 @@ pre
 
 			h3
 				display inline
-				font-size 1.2em
+				font-size 1em
 				font-family "Merriweather", Cambria
 
 				a
 					color rojo
 					font-weight bold
 					border 0
+					
+					&:hover
+						color negro
 			span.fecha_articulo
 				padding 0.2em
 				font-family Lato, Arial
@@ -236,8 +243,12 @@ pre
 	.mas_articulos
 		a
 			font-weight bold
+			border-bottom 1px solid #ddd
 			&:before
 				content  "← "
+			&:hover
+				color negro
+				border-bottom 1px solid #aaa
 
 
 	footer
@@ -250,14 +261,17 @@ pre
 		padding 0 1%
 		width 98%
 		a
-			color #000
+			color negro
 			font-weight bold
+			&:hover
+				border-bottom 1px solid #aaa
 		.licencia
 			&:before
 				content "— "
 		.arriba
 			&:after
 				content " ↑"
+		
 
 
 .left
@@ -325,5 +339,5 @@ pre
 					display inline
 					list-style none
 					margin-right 2px
-					padding 2px 20px
+					padding 2px 10px
 					text-align center
