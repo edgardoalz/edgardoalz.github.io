@@ -6,7 +6,7 @@ html {
 }
 body {
   background: #fff;
-  font-family: Lato, Lucida Grande, Arial, Sans-serif;
+  font-family: "Merriweather Sans", "Lucida Sans", Arial, Sans-serif;
   font-size: 16px;
 }
 a {
@@ -32,7 +32,7 @@ pre {
   width: 98%;
 }
 #contenido header h1 {
-  font-family: Lato, Lucida Sans, Arial, Sans-serif;
+  font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
   margin: 0;
   padding: 0;
   max-width: 50%;
@@ -58,7 +58,7 @@ pre {
 #contenido header nav {
   display: inline-block;
   float: right;
-  font-family: Lato, Arial;
+  font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
   margin: -2.4em 0 0 0;
   max-width: 50%;
   padding: 0;
@@ -82,7 +82,7 @@ pre {
 #contenido header form {
   display: inline-block;
   float: right;
-  font-family: Lato, Arial;
+  font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
   margin: -1.5em 0 0 0;
   max-width: 50%;
   padding: 0;
@@ -107,6 +107,12 @@ pre {
   padding: 0 1%;
   width: 78%;
   float: right;
+}
+#contenido section article p {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0.5em 0;
+  padding: 0;
 }
 #contenido section article a,
 #contenido section article ul li a {
@@ -149,7 +155,7 @@ pre {
   width: 100%;
 }
 #contenido section article.ultimo_articulo h2 {
-  font-family: "Merriweather", Cambria;
+  font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
   line-height: 26px;
   font-size: 26px;
   margin: 0 0 0.2em 0;
@@ -164,7 +170,7 @@ pre {
   color: #000;
 }
 #contenido section article.ultimo_articulo span.fecha_articulo {
-  font-family: Lato, Arial, Sans-serif;
+  font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
   font-weight: normal;
   color: #111;
   line-height: 14px;
@@ -173,7 +179,7 @@ pre {
 }
 #contenido section article.ultimo_articulo p {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   margin: 0.5em 0;
   padding: 0;
 }
@@ -191,11 +197,13 @@ pre {
 }
 #contenido section article.lista_articulos {
   margin: 1.5em 0;
+  font-size: 15px;
+  line-height: 22px;
 }
 #contenido section article.lista_articulos h3 {
   display: inline;
   font-size: 1em;
-  font-family: "Merriweather", Cambria;
+  font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
 }
 #contenido section article.lista_articulos h3 a {
   color: #ab2815;
@@ -207,7 +215,7 @@ pre {
 }
 #contenido section article.lista_articulos span.fecha_articulo {
   padding: 0.2em;
-  font-family: Lato, Arial;
+  font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
   font-size: 0.9em;
   font-weight: bold;
   color: #111;
@@ -218,7 +226,7 @@ pre {
 #contenido section article.lista_articulos p {
   display: inline;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
 }
 #contenido section article.lista_articulos p a.seguir_leyendo {
   color: #111;

@@ -4,6 +4,8 @@ rojo = #AB2815
 // azul = #2455C3
 azul = #0435A3
 negro = #000000
+fuente_titulos = "Libre Franklin", "Lucida Grande", Arial, Sans-serif
+fuente_texto = "Merriweather Sans", "Lucida Sans", Arial, Sans-serif
 
 
 body
@@ -14,7 +16,7 @@ html
 
 body
 	background #fff
-	font-family Lato, Lucida Grande, Arial, Sans-serif
+	font-family fuente_texto
 	font-size 16px
 
 a
@@ -38,7 +40,7 @@ pre
 		padding 1%
 		width 98%
 		h1
-			font-family Lato, Lucida Sans, Arial, Sans-serif
+			font-family fuente_titulos
 			margin 0
 			padding 0
 			max-width 50%
@@ -61,7 +63,7 @@ pre
 		nav
 			display inline-block
 			float right
-			font-family Lato, Arial
+			font-family fuente_titulos
 			margin -2.4em 0 0 0
 			max-width 50%
 			padding 0
@@ -82,7 +84,7 @@ pre
 		form
 			display inline-block
 			float right
-			font-family Lato, Arial
+			font-family fuente_titulos
 			margin -1.5em 0 0 0
 			max-width 50%
 			padding 0
@@ -109,6 +111,11 @@ pre
 		float right
 		
 		article
+			p
+				font-size 18px
+				line-height 22px
+				margin 0.5em 0
+				padding 0
 			a
 			ul li a
 				color azul
@@ -145,7 +152,7 @@ pre
 			width 100%
 
 			h2
-				font-family "Merriweather", Cambria
+				font-family fuente_titulos
 				line-height 26px
 				font-size 26px
 				margin 0 0 0.2em 0
@@ -158,7 +165,7 @@ pre
 					&:hover
 						color #000
 			span.fecha_articulo
-				font-family Lato, Arial, Sans-serif
+				font-family fuente_titulos
 				font-weight normal
 				color #111
 				line-height 14px
@@ -166,7 +173,7 @@ pre
 				font-weight bold
 			p
 				font-size 16px
-				line-height 22px
+				line-height 24px
 				margin 0.5em 0
 				padding 0
 				a
@@ -181,11 +188,13 @@ pre
 
 		article.lista_articulos
 			margin 1.5em 0
+			font-size 15px
+			line-height 22px
 
 			h3
 				display inline
 				font-size 1em
-				font-family "Merriweather", Cambria
+				font-family fuente_titulos
 
 				a
 					color rojo
@@ -196,7 +205,7 @@ pre
 						color negro
 			span.fecha_articulo
 				padding 0.2em
-				font-family Lato, Arial
+				font-family fuente_titulos
 				font-size 0.9 em
 				font-weight bold
 				color #111
@@ -205,7 +214,7 @@ pre
 			p
 				display inline
 				font-size 14px
-				line-height 20px
+				line-height 22px
 				
 				a.seguir_leyendo
 					color #111
