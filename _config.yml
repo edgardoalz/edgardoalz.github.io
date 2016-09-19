@@ -12,6 +12,8 @@ github_username:  edgardoalz
 markdown: kramdown
 permalink:    /:year/:month/:title/
 highlighter: rouge 
+gems:
+  - jekyll-minifier
 # paginate:     5
 # paginate_path: /pagina-:num/
 
