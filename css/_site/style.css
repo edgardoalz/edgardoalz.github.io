@@ -20,7 +20,7 @@ pre {
   font-size: 0.8em;
 }
 #contenido {
-  margin: 0;
+  margin-left: 2em;
   max-width: 900px;
   padding: 1% 1% 0 1%;
 }
@@ -28,7 +28,7 @@ pre {
   display: block;
   margin: 0;
   overflow: hidden;
-  padding: 0 1% 1% 1%;
+  padding: 1%;
   width: 98%;
 }
 #contenido header h1 {
