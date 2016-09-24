@@ -16,6 +16,6 @@ permalink: /archivo/
         <ul class="articulos_anteriores">
       {% endif %}
     {% endunless %}
-      <li><time>{{ post.date | date: "%d " }}{% include month.html %}</time> <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date: "%d " }}{% include month.html %}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
