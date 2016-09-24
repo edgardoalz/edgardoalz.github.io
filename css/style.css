@@ -20,8 +20,8 @@ pre {
   font-size: 0.8em;
 }
 #contenido {
-  margin-left: 2em;
-  max-width: 720px;
+  margin: 0 auto;
+  max-width: 900px;
   padding: 1% 1% 0 1%;
 }
 #contenido header {
