@@ -180,8 +180,12 @@ pre {
 #contenido section article.ultimo_articulo p {
   font-size: 16px;
   line-height: 24px;
-  margin: 0.5em 0;
+  margin: 0.5em 0 1em;
   padding: 0;
+}
+#contenido section article.ultimo_articulo p img {
+  max-height: 200px;
+  float: right;
 }
 #contenido section article.ultimo_articulo p a {
   border-bottom: 1px solid #ddd;
@@ -346,6 +350,10 @@ pre {
   #contenido section article p,
   #contenido section article.lista_articulos p {
     font-size: 16px;
+  }
+  #contenido section article.ultimo_articulo p img {
+    max-height: 200px;
+    float: none;
   }
   #contenido aside {
     float: left;

@@ -6,8 +6,8 @@ layout: default
   <span class="fecha_articulo">{{ page.date | date: "%d " }}{% include month.html %}{{ page.date | date: " %Y" }}</span>
   {{ content }}
     <div>
-      <a class="compartir_articulo" href="http://www.facebook.com/sharer.php?u={{ page.url | prepend: site.url }}"><img src="{{ "/img/fb-compartir.png" | prepend: site.baseurl }}" height="20" width="64" border="0" alt="Compartir en Facebook" title="Compartir en Facebook" /></a>
-      <a class="compartir_articulo" href="https://twitter.com/intent/tweet?text={{ page.title }} — {{ site.title }} {{ page.url | prepend: site.url }}"><img src="{{ "/img/tweet.png" | prepend: site.baseurl }}" height="20" width="67" border="0" alt="Tuitear" title="Tuitear" /></a>
+      <a class="compartir_articulo" href="http://www.facebook.com/sharer.php?u={{ page.url | prepend: site.url }}"><img src="{{ "/img/fb-compartir.png" | prepend: site.baseurl }}" height="20" width="64" border="0" alt="Compartir en Facebook" title="Compartir en Facebook" target="_blank" /></a>
+      <a class="compartir_articulo" href="https://twitter.com/intent/tweet?text={{ page.title }} — {{ site.title }} {{ page.url | prepend: site.url }}"><img src="{{ "/img/tweet.png" | prepend: site.baseurl }}" height="20" width="67" border="0" alt="Tuitear" title="Tuitear" target="_blank" /></a>
     </div>
 
   <div class="articulo_navegacion">
