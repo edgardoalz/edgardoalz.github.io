@@ -1,4 +1,5 @@
 <aside>
+    <h2 style="display:none">Menú</h2>
     <ul id="menu">
         <li><a href="{{ "/" | prepend: site.baseurl }}">Inicio</a></li>
         {% for page in site.pages %}{% if page.title %}<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
