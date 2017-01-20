@@ -33,3 +33,24 @@ function paginaActiva() {
 }
 // Ejecutando la funcion
 paginaActiva();
+
+
+function buscar () {
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+           if (xhr.status == 200) {
+               console.log(JSON.parse(xhr.responseText));
+           } else if (xhr.status == 400) {
+              console.warn('Error 400');
+           } else {
+               console.warn('Error status:', xhr.status);
+           }
+        }
+    };
+
+    xhr.open("GET", "/index.json", true);
+    xhr.send();
+};
+
+buscar();
