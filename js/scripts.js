@@ -1,56 +1,91 @@
-function paginaActiva() {
+(function () {
 
-    var dir = window.location.href;
-    var host = window.location.protocol + "//" + window.location.host;
-    var ruta = dir.substring(host.length);
-    var archivos, activo = false;
+    // set search element
+    let searchBtn = document.getElementById('searchBtn');
+    let searchTxt = document.getElementById('searchTxt');
+    let data = document.getElementById('datos');
+    function activePage () {
+        var dir = window.location.href;
+        var host = window.location.protocol + "//" + window.location.host;
+        var path = dir.substring(host.length);
+        var archives, active = false;
 
-    var menu = document.getElementById('menu');
-    var elementos = menu.childNodes;
+        var menu = document.getElementById('menu');
+        var elements = menu.childNodes;
 
-    for (i = 0; i < elementos.length; i++) {
-        var nodos = elementos[i].childNodes;
+        for (i = 0; i < elements.length; i++) {
+            var nodes = elements[i].childNodes;
 
-        for (j = 0; j < nodos.length; j++){
+            for (j = 0; j < nodes.length; j++){
 
-            if (nodos[j].tagName === "A") {
-                var url = nodos[j].getAttribute("href");
+                if (nodes[j].tagName === "A") {
+                    var url = nodes[j].getAttribute("href");
 
-                if (url === ruta) {
-                    activo = true;
-                    elementos[i].className = "activo";
-                    break;
-                
-                } else if (url === "/archivo/") {
-                    archivos = elementos[i];
+                    if (url === path) {
+                        active = true;
+                        elements[i].className = "activo";
+                        break;
+                    
+                    } else if (url === "/archivo/") {
+                        archives = elements[i];
+                    }
                 }
             }
         }
-    }
-    if (!activo) {
-        archivos.className = "activo";
-    }
-}
-// Ejecutando la funcion
-paginaActiva();
-
-
-function buscar () {
-    let xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == XMLHttpRequest.DONE) {
-           if (xhr.status == 200) {
-               console.log(JSON.parse(xhr.responseText));
-           } else if (xhr.status == 400) {
-              console.warn('Error 400');
-           } else {
-               console.warn('Error status:', xhr.status);
-           }
+        if (!active) {
+            archives.className = "activo";
         }
-    };
+    }
 
-    xhr.open("GET", "/index.json", true);
-    xhr.send();
-};
+    // Ejecutando la funcion
+    activePage();
 
-buscar();
+    function getArticles () {
+        return new Promise (function (resolve, reject) {
+            let xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    if (xhr.status == 200) {
+                        resolve(JSON.parse(xhr.responseText));
+                    } else if (xhr.status == 400) {
+                        reject('Error 404');
+                    } else {
+                        reject('Error: ' + xhr.status);
+                    }
+                }
+            };
+
+            xhr.open("GET", "/index.json", true);
+            xhr.send();
+        }) ;
+
+    }
+
+
+    searchBtn.addEventListener('click', search);
+    searchTxt.addEventListener('keypress', function (event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            search();
+        }
+    });
+    function search () {
+        getArticles().then(function (articles) {
+            let regex = new RegExp(searchTxt.value, 'ig');
+            let filter = articles.filter(function (article) {
+                return regex.test(article.summary) || regex.test(article.title);
+            });
+            console.log(data);
+            console.log(filter);
+        }).catch(function (error) {
+            console.warn(error);
+        });
+    }
+
+})();
+
+
+
+
+
+
