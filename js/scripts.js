@@ -26,7 +26,7 @@
                         elements[i].className = "activo";
                         break;
                     
-                    } else if (url === "/archivo/") {
+                    } else if (url === "/articulos/") {
                         archives = elements[i];
                     }
                 }
