@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Autor
-permalink: /autor/
+title: Proyectos
+permalink: /proyectos/
 ---
 Este es el blog de __Edgardo Alz__ sobre desarrollo, software libre y más temas 
 relacionados con tecnología, hardware y otros que despiertan el interes del autor.
