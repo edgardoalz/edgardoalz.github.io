@@ -3,11 +3,11 @@ layout: default
 ---
 <article id="sobre-mi" class="ultimo_articulo">
     <h2>Sobre mí</h2>
-    <p>Este es el blog de <strong>Edgardo Alz</strong> sobre desarrollo, software libre y más temas relacionados con tecnología, hardware y otros que despiertan el interes del autor.</p>
+    <p>Soy <strong>Edgardo Alz</strong>, soy desarrollador web desde hay mas de un año y medio, utilizando principalmente <a href="#herramientas-y-tecnologias">JavaScript</a>, con <a href="https://angularjs.org" target="_blank">Angular.js</a> en el frontend y <a href="https://nodejs.org" target="_blank">Node.js</a> en el backend, a veces escribo sobre diversos temas, entre ellos, desarrollo, software libre, tecnología, hardware y otros temas que despiertan mi interes. <a href="/cv.pdf">Mas información</a>.</p>
 
 </article>
 
-<article class="ultimo_articulo" id="contato">
+<article id="contato" class="ultimo_articulo" >
     <h2>Contacto</h2>
     <ul>
         <li>Correo electronico <a href="mailto:edgardo@kriblet.com">edgardo@kriblet.com</a></li>
@@ -16,17 +16,20 @@ layout: default
     </ul>
 </article>
 
-<article id="el-blog-esta-creado-con" class="ultimo_articulo">
-    <h2>Tecnologías</h2>
+<article id="herramientas-y-tecnologias" class="ultimo_articulo">
+    <h2>Herramientas y tecnologías</h2>
     <ul>
-        <li>Sistema operativo <a href="http://ubuntu.com">Ubuntu GNU/Linux</a></li>
-        <li>Generador de sitios estáticos <a href="http://jekyllrb.com">Jekyll</a></li>
-        <li>Editor de código <a href="http://www.vim.org">Vim</a>, <a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+        <li><strong>Lenguajes de programación:</strong> JavaScript, C, Go, Python, Java y C#.</li>
+        <li><strong>Tecnologías web:</strong> Node.js, jQuery, Angular.js, Bootstrap, HTML5 y CSS3.</li>
+        <li><strong>Bases de datos:</strong> MongoDB, MySQL y MSSQL Server.</li>
+        <li><strong>Herramientas de desarrollo:</strong> WebStorm, Visual Studio Code, Git, Make, Gulp, NPM, Tmux, Vim, SSH.</li>
+        <li><strong>Sistemas operativos:</strong> Ubuntu GNU\Linux, Windows 10.</li>
+        <li><strong>Otros:</strong> Arduino, Raspberry Pi.</li>
     </ul>
 
 </article>
 
-<article class="ultimo_articulo" id="articulos-recientes">
+<article id="articulos-recientes" class="ultimo_articulo">
     <h2>Articulos recientes</h2>
     {% for post in site.posts limit:3 %}
         <article class="lista_articulos">
