@@ -1,24 +1,47 @@
 ---
 layout: default
 ---
-{% for post in site.posts limit:5 %}
-    {% if forloop.first %}
-        <article class="ultimo_articulo">
-            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-            <span class="fecha_articulo">{{ post.date | date: "%d " }}{% include month.html %}{{ post.date | date: " %Y" }}</span>
-            {{ post.content }}
-        </article>
-            <h2 class="recientes">Articulos recientes</h2>
-            {% else %}  
+<article id="sobre-mi" class="ultimo_articulo">
+    <h2>Sobre mí</h2>
+    <p>Soy <strong>Edgardo Alz</strong>, soy desarrollador web desde hay mas de un año y medio, utilizando principalmente <a href="#herramientas-y-tecnologias">JavaScript</a>, con <a href="https://angularjs.org" target="_blank">Angular.js</a> en el frontend y <a href="https://nodejs.org" target="_blank">Node.js</a> en el backend, a veces escribo sobre diversos temas, entre ellos, desarrollo, software libre, tecnología, hardware y otros temas que despiertan mi interes. <a href="/cv.pdf">Mas información</a>.</p>
+
+</article>
+
+<article id="contato" class="ultimo_articulo" >
+    <h2>Contacto</h2>
+    <ul>
+        <li>Correo electronico <a href="mailto:edgardo@kriblet.com">edgardo@kriblet.com</a></li>
+        <li>Github <a href="http://github.com/edgardoalz">@edgardoalz</a></li>
+        <li>Twitter <a href="http://twitter.com/edgardoalz">@edgardoalz</a></li>
+    </ul>
+</article>
+
+<article id="herramientas-y-tecnologias" class="ultimo_articulo">
+    <h2>Herramientas y tecnologías</h2>
+    <ul>
+        <li><strong>Lenguajes de programación:</strong> JavaScript, C, Go, Python, Java y C#.</li>
+        <li><strong>Tecnologías web:</strong> Node.js, jQuery, Angular.js, Bootstrap, HTML5 y CSS3.</li>
+        <li><strong>Bases de datos:</strong> MongoDB, MySQL y MSSQL Server.</li>
+        <li><strong>Herramientas de desarrollo:</strong> WebStorm, Visual Studio Code, Git, Make, Gulp, NPM, Tmux, Vim, SSH.</li>
+        <li><strong>Sistemas operativos:</strong> Ubuntu GNU\Linux, Windows 10.</li>
+        <li><strong>Otros:</strong> Arduino, Raspberry Pi.</li>
+    </ul>
+
+</article>
+
+<article id="articulos-recientes" class="ultimo_articulo">
+    <h2>Articulos recientes</h2>
+    {% for post in site.posts limit:3 %}
         <article class="lista_articulos">
             <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
             <span class="fecha_articulo">{{ post.date | date: "%d " }}{% include month.html %}{{ post.date | date: " %Y" }}</span>
             {{ post.summary }}
             <p> <a href="{{ post.url | prepend: site.baseurl }}" class="seguir_leyendo">Seguir leyendo</a></p>
         </article>
-    {% endif %}
-{% endfor %}
+    {% endfor %}
 
-<div class="mas_articulos">
-    <a href="{{ "/archivo/" | prepend: site.baseurl }}">Mas articulos</a>
-</div>
+    <div class="mas_articulos">
+        <a href="{{ "/articulos/" | prepend: site.baseurl }}">Mas articulos</a>
+    </div>
+</article>
+
