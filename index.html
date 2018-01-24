@@ -2,8 +2,8 @@
 layout: default
 ---
 <article id="sobre-mi" class="ultimo_articulo">
-    <h2>Sobre mí</h2>
-    <p>Soy <strong>Edgardo Alz</strong>, soy desarrollador web desde hay mas de un año y medio, utilizando principalmente <a href="#herramientas-y-tecnologias">JavaScript</a>, con <a href="https://angularjs.org" target="_blank">Angular.js</a> en el frontend y <a href="https://nodejs.org" target="_blank">Node.js</a> en el backend, a veces escribo sobre diversos temas, entre ellos, desarrollo, software libre, tecnología, hardware y otros temas que despiertan mi interes. <a href="/cv.pdf">Mas información</a>.</p>
+    <!-- <h2>Sobre mí</h2> -->
+    <p>Soy <strong>Edgardo Alvarez</strong>, soy desarrollador web desde hay mas de dos años, utilizando principalmente <a href="#herramientas-y-tecnologias">JavaScript</a>, con <a href="https://angularjs.org" target="_blank">Angular.js</a> en el frontend y <a href="https://nodejs.org" target="_blank">Node.js</a> en el backend, a veces escribo sobre diversos temas, entre ellos, desarrollo, software libre, tecnología, hardware y otros temas que despiertan mi interes. <a href="/cv.pdf">Mas información</a>.</p>
 
 </article>
 
@@ -21,8 +21,8 @@ layout: default
     <ul>
         <li><strong>Lenguajes de programación:</strong> JavaScript, C, Go, Python, Java y C#.</li>
         <li><strong>Tecnologías web:</strong> Node.js, jQuery, Angular.js, Bootstrap, HTML5 y CSS3.</li>
-        <li><strong>Bases de datos:</strong> MongoDB, MySQL y MSSQL Server.</li>
-        <li><strong>Herramientas de desarrollo:</strong> WebStorm, Visual Studio Code, Git, Make, Gulp, NPM, Tmux, Vim, SSH.</li>
+        <li><strong>Bases de datos:</strong> MongoDB, MySQL y PostgreSQL.</li>
+        <li><strong>Herramientas de desarrollo:</strong> VS Code, Git, Make, Gulp, NPM, Tmux, Vim, SSH.</li>
         <li><strong>Sistemas operativos:</strong> Ubuntu GNU\Linux, Windows 10.</li>
         <li><strong>Otros:</strong> Arduino, Raspberry Pi.</li>
     </ul>
@@ -30,7 +30,7 @@ layout: default
 </article>
 
 <article id="articulos-recientes" class="ultimo_articulo">
-    <h2>Articulos recientes</h2>
+    <h2>Artículos recientes</h2>
     {% for post in site.posts limit:3 %}
         <article class="lista_articulos">
             <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
