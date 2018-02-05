@@ -83,30 +83,8 @@
     }
 
     window.onload = function (ev) {
-        var time = 300;
         var content = document.querySelector('#contenido');
-        var loader = document.querySelector('#cargador');
-        timeout(time).then(function () {
-            loader.classList.toggle('fade');
-            return timeout(time);
-        }).then(function () {
-            loader.style.display = 'none';
-            return timeout(time);
-        }).then(function () {
-            content.style.display = 'block';
-            return timeout(time);
-        }).then(function () {
-            content.classList.toggle('fade');
-            return timeout(time);
-        }).catch(function (error) {
-            console.warn(error);
-        });
-    }
-
-    function timeout (time) {
-        return new Promise(function (resolve, reject) {
-            setTimeout(function () { resolve() }, time);
-        });
+        content.classList.toggle('fade');
     }
 
 })();
