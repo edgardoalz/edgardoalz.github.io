@@ -1,9 +1,9 @@
 (function () {
 
     // set search element
-    let searchBtn = document.getElementById('searchBtn');
-    let searchTxt = document.getElementById('searchTxt');
-    let data = document.getElementById('datos');
+    var searchBtn = document.getElementById('searchBtn');
+    var searchTxt = document.getElementById('searchTxt');
+    var data = document.getElementById('datos');
     function activePage () {
         var dir = window.location.href;
         var host = window.location.protocol + "//" + window.location.host;
@@ -42,7 +42,7 @@
 
     function getArticles () {
         return new Promise (function (resolve, reject) {
-            let xhr = new XMLHttpRequest();
+            var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == XMLHttpRequest.DONE) {
                     if (xhr.status == 200) {
@@ -71,8 +71,8 @@
     });
     function search () {
         getArticles().then(function (articles) {
-            let regex = new RegExp(searchTxt.value, 'ig');
-            let filter = articles.filter(function (article) {
+            var regex = new RegExp(searchTxt.value, 'ig');
+            var filter = articles.filter(function (article) {
                 return regex.test(article.summary) || regex.test(article.title);
             });
             console.log(data);
@@ -80,6 +80,11 @@
         }).catch(function (error) {
             console.warn(error);
         });
+    }
+
+    window.onload = function (ev) {
+        var content = document.querySelector('#contenido');
+        content.classList.toggle('fade');
     }
 
 })();
