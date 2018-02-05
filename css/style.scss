@@ -24,7 +24,13 @@ a {
 pre {
 	font-size: 1em;
 }
+#cargador {
+	position: absolute;
+	display:block;
+	margin: 20% 0 -20px 30%;
+}
 #contenido {
+	display: none;
 	margin: 0;
 	max-width: 890px;
 	padding: 1% 1% 0 1%;
@@ -342,6 +348,14 @@ pre {
 .right {
 	float: right;
 }
+.toFade {
+	opacity: 1;
+	transition: opacity 1s; 
+}
+.fade {
+	opacity:0;
+}
+
 @media (max-width: 640px) {
 	#contenido {
 		margin: 0 auto;
