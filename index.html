@@ -29,7 +29,7 @@ layout: default
 </article>
 
 <article id="articulos-recientes" class="ultimo_articulo">
-    <h2>Artículos recientes</h2>
+    <h2>Últimos artículos</h2>
     {% for post in site.posts limit:3 %}
         <article class="lista_articulos">
             <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>

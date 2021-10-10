@@ -1,4 +1,4 @@
-Copyright (c) 2016 Edgardo Alz
+Copyright (c) 2016 Edgardo Alvarez
 
 MIT License
 

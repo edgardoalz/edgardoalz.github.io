@@ -1,3 +1,3 @@
-# Blog de Edgardo Alz
+# Blog de Edgardo Alvarez
 Sitio creado con [Jekyll](http://jekyllrb.com/).
 
