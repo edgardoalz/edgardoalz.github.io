@@ -1,10 +1,10 @@
 # Site settings
 title: Edgardo Alvarez
-email: edgardo@kriblet.com
+email: edgardoalz@protonmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Programación, tecnología y software libre.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://edgardo.kriblet.com" # the base hostname & protocol for your site
+url: "http://edgardoalz.net" # the base hostname & protocol for your site
 twitter_username: edgardoalz
 github_username:  edgardoalz
 
