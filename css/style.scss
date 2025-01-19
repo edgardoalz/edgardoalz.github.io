@@ -6,23 +6,28 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #fff;
-	font-family: "Fira Sans Condensed", "Alegreya Sans", "Merriweather Sans", "Lucida Sans", "Roboto Mono", "Source Sans Pro", Arial, Sans-serif;
-	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	// font-family: "Fira Sans Condensed", "Alegreya Sans", "Merriweather Sans", "Lucida Sans", "Roboto Mono", "Source Sans Pro", Arial, Sans-serif;
+	font-size: 12px;
 }
 html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
 }
-a {
-	color: #000;
-	text-decoration: none;
-	&:hover {
-		color: #ab2815;
-	}
-}
+// a {
+	// color: #000;
+	// text-decoration: none;
+	// &:hover {
+	// 	color: #ab2815;
+	// }
+// }
 pre {
-	font-size: 1em;
+	font-size: 0.8em;
+	background-color: #fafafa;
+	border: 1px solid #eee;
+	padding: 1em;
+	margin: 0;
 }
 #contenido {
 	margin: 0;
@@ -35,18 +40,20 @@ pre {
 		padding: 0 1% 1% 1%;
 		width: 98%;
 		h1 {
-			font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
+			// font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
 			margin: 0;
 			padding: 0;
 			max-width: 50%;
+			font-size: 26px;
 			a {
 				border-radius: 2px;
 				padding: 0.1em;
 				border: 0;
 				color: #000;
-				&:hover {
-					color: #ab2815;
-				}
+				text-decoration: none;
+				// &:hover {
+				// 	color: #ab2815;
+				// }
 			}
 		}
 		p.subtitulo {
@@ -54,14 +61,13 @@ pre {
 			margin: 0;
 			padding: 0;
 			// float: left;
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 16px;
 			width: 50%;
 		}
 		nav {
 			display: inline-block;
-			float: right;
-			font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
+			// font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
 			margin: -2.4em 0 0 0;
 			max-width: 50%;
 			padding: 0;
@@ -74,18 +80,19 @@ pre {
 					margin-right: 0.5em;
 					padding: 0;
 					a {
-						border-bottom: 1px solid #ddd;
+						// border-bottom: 1px solid #ddd;
+						text-decoration: none;
 						color: #222;
 						font-weight: normal;
-						font-size: 16px;
+						font-size: 14px;
 					}
 				}
 			}
 		}
 		form {
-			display: inline-block;
+			// display: inline-block;
 			float: right;
-			font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
+			// font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
 			margin: -1.5em 0 0 0;
 			max-width: 50%;
 			padding: 0;
@@ -99,7 +106,7 @@ pre {
 				color: #ddd;
 				border: 1px solid #333;
 				padding: 0.2em 0.5em;
-				font-size: 0.9em;
+				font-size: 1em;
 				margin: -1em 0 1em 0;
 				font-weight: bold;
 			}
@@ -113,33 +120,33 @@ pre {
 		float: right;
 		article {
 			p {
-				font-size: 18px;
+				font-size: 1em;
 				line-height: 22px;
 				margin: 0.5em 0;
 				padding: 0;
 			}
-			a {
-				color: #0435a3;
-				border-bottom: 1px solid #ddd;
-				font-weight: normal;
-				&:hover {
-					color: #000;
-					border-bottom: 1px solid #aaa;
-				}
-			}
-			ul {
-				li {
-					a {
-						color: #0435a3;
-						border-bottom: 1px solid #ddd;
-						font-weight: normal;
-						&:hover {
-							color: #000;
-							border-bottom: 1px solid #aaa;
-						}
-					}
-				}
-			}
+			// a {
+			// 	color: #0435a3;
+			// 	border-bottom: 1px solid #ddd;
+			// 	font-weight: normal;
+			// 	&:hover {
+			// 		color: #000;
+			// 		border-bottom: 1px solid #aaa;
+			// 	}
+			// }
+			// ul {
+			// 	li {
+			// 		a {
+			// 			color: #0435a3;
+			// 			border-bottom: 1px solid #ddd;
+			// 			font-weight: normal;
+			// 			&:hover {
+			// 				color: #000;
+			// 				border-bottom: 1px solid #aaa;
+			// 			}
+			// 		}
+			// 	}
+			// }
 		}
 		a.compartir_articulo {
 			border: 0;
@@ -154,7 +161,7 @@ pre {
 			font-size: 0.9em;
 			margin: 10px 0 0;
 			a {
-				color: #111;
+				// color: #111;
 				font-weight: bold;
 			}
 			a.anterior {
@@ -169,14 +176,14 @@ pre {
 			}
 		}
 		article.ultimo_articulo {
-			font-size: 18px;
+			font-size: 1.2em;
 			margin: 1em 0;
 			padding: 0%;
 			width: 100%;
 			h2 {
-				font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
+				// font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
 				line-height: 26px;
-				font-size: 26px;
+				font-size: 1.4em;
 				margin: 0 0 0.2em 0;
 				padding: 0;
 				a {
@@ -189,57 +196,57 @@ pre {
 				}
 			}
 			span.fecha_articulo {
-				font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
+				// font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
 				font-weight: normal;
 				color: #111;
-				line-height: 14px;
+				line-height: 1.4em;
 				font-size: 1em;
 				font-weight: bold;
 			}
 			p {
-				font-size: 18px;
-				line-height: 24px;
+				font-size: 1em;
+				line-height: 1.4em;
 				margin: 0.5em 0 1em;
 				padding: 0;
 				img {
 					max-height: 200px;
 					float: right;
 				}
-				a {
-					border-bottom: 1px solid #ddd;
-					color: #0435a3;
-					&:hover {
-						color: #000;
-						border-bottom: 1px solid #aaa;
-					}
-				}
+				// a {
+				// 	border-bottom: 1px solid #ddd;
+				// 	color: #0435a3;
+				// 	&:hover {
+				// 		color: #000;
+				// 		border-bottom: 1px solid #aaa;
+				// 	}
+				// }
 			}
 			ul {
 				font-size: 1em;
-				line-height: 1.6em;
+				line-height: 1.4em;
 			}
 		}
 		#articulos-recientes {
 			.lista_articulos {
 				margin: 1.5em 0;
-				font-size: 18px;
-				line-height: 22px;
+				font-size: 1em;
+				line-height: 1.4em;
 				h3 {
 					display: inline;
 					font-size: 1em;
-					font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
+					// font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
 					a {
-						color: #ab2815;
+						// color: #ab2815;
 						font-weight: bold;
 						border: 0;
-						&:hover {
-							color: #000;
-						}
+						// &:hover {
+						// 	color: #000;
+						// }
 					}
 				}
 				span.fecha_articulo {
 					padding: 0.2em;
-					font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
+					// font-family: "Libre Franklin", "Lucida Grande", Arial, Sans-serif;
 					font-size: 0.9em;
 					font-weight: bold;
 					color: #111;
@@ -249,10 +256,10 @@ pre {
 				}
 				p {
 					display: inline;
-					font-size: 18px;
-					line-height: 22px;
+					font-size: 1em;
+					line-height: 1.4em;
 					a.seguir_leyendo {
-						color: #111;
+						// color: #111;
 						font-weight: bold;
 						&:after {
 							content: " →";
@@ -262,16 +269,16 @@ pre {
 			}
 			.mas_articulos {
 				a {
-					color: #000;
+					// color: #000;
 					font-weight: bold;
-					border-bottom: 1px solid #ddd;
+					// border-bottom: 1px solid #ddd;
 					&:before {
 						content: "← ";
 					}
-					&:hover {
-						color: #000;
-						border-bottom: 1px solid #aaa;
-					}
+					// &:hover {
+						// color: #000;
+						// border-bottom: 1px solid #aaa;
+					// }
 				}
 			}	
 		}
@@ -299,7 +306,12 @@ pre {
 				padding: 0.2em 0.5em;
 				display: block;
 				a {
+					color: #000;
+					text-decoration: none;
 					font-weight: bold;
+					// &:hover {
+					// 	color: #ab2815;
+					// }
 				}
 			}
 			li.activo {
@@ -311,18 +323,18 @@ pre {
 	footer {
 		border-top: 1px solid #ddd;
 		color: #333;
-		font-size: 16px;
+		font-size: 1.2em;
 		height: 50px;
 		margin: 2em 0 0 0;
 		overflow: hidden;
 		padding: 0 1%;
 		width: 98%;
 		a {
-			color: #000;
+			// color: #000;
 			font-weight: bold;
-			&:hover {
-				border-bottom: 1px solid #aaa;
-			}
+			// &:hover {
+			// 	border-bottom: 1px solid #aaa;
+			// }
 		}
 		.licencia {
 			&:before {
@@ -356,19 +368,19 @@ pre {
 		header {
 			h1 {
 				display: inline-block;
-				float: left;
+				// float: left;
 				min-width: 100%;
 				text-align: center;
 			}
 			p.subtitulo {
 				display: inline-block;
-				float: left;
+				// float: left;
 				min-width: 100%;
 				text-align: center;
 			}
 			nav {
 				display: inline-block;
-				float: left;
+				// float: left;
 				margin: 0.5em 0 0 0;
 				min-width: 100%;
 				text-align: center;
@@ -376,7 +388,7 @@ pre {
 			}
 			form {
 				display: inline-block;
-				float: left;
+				// float: left;
 				margin: 0.5em 0 0 0;
 				min-width: 100%;
 				text-align: center;
@@ -388,12 +400,12 @@ pre {
 			width: 98%;
 			article {
 				p {
-					font-size: 16px;
+					font-size: 1em;
 				}
 			}
 			article.lista_articulos {
 				p {
-					font-size: 16px;
+					font-size: 1em;
 				}
 			}
 			article.ultimo_articulo {
@@ -406,7 +418,7 @@ pre {
 			}
 		}
 		aside {
-			float: left;
+			// float: left;
 			width: 98%;
 			display: inline-block;
 			padding: 0 1%;
