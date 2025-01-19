@@ -5,10 +5,10 @@ layout: default
   <h2>{{ page.title }}</h2>
   <span class="fecha_articulo">{{ page.date | date: "%d " }}{% include month.html %}{{ page.date | date: " %Y" }}</span>
   {{ content }}
-    <div>
+    <!-- <div>
       <a class="compartir_articulo" target="_blank" href="http://www.facebook.com/sharer.php?u={{ page.url | prepend: site.url }}"><img src="{{ "/img/fb-compartir.png" | prepend: site.baseurl }}" height="20" width="64" alt="Compartir en Facebook" title="Compartir en Facebook" /></a>
       <a class="compartir_articulo" target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20—%20{{ site.title | uri_escape }}%20{{ page.url | prepend: site.url }}"><img src="{{ "/img/tweet.png" | prepend: site.baseurl }}" height="20" width="67" alt="Tuitear" title="Tuitear" /></a>
-    </div>
+    </div> -->
 
   <div class="articulo_navegacion">
       {% if page.previous.url %}<a class="anterior" href="{{page.previous.url}}">{{page.previous.title}}</a>{% endif %}
