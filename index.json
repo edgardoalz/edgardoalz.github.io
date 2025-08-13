@@ -1,14 +1,38 @@
----
-layout: null
----
-
 [
-{% for post in site.posts %}
+
     {
-        "title"    : "{{ post.title }}",
-        "url"     : "{{ post.url }}",
-        "date"     : "{{ post.date | date: "%B %d, %Y" }}",
-        "summary"  : "{{ post.summary | escape }}"
-    }{% if forloop.last %}{% else %},{% endif %}
-{% endfor %}
+        "title"    : "Funtoo GNU/Linux",
+        "url"     : "/2016/01/funtoo-gnu-linux/",
+        "date"     : "January 17, 2016",
+        "summary"  : "Durante casi 10 años llevo utilizando sistemas operativos GNU/Linux, empezando desde los más sencillos de instalar como Ubuntu, Fedora, entre otros."
+    },
+
+    {
+        "title"    : "Google App Engine",
+        "url"     : "/2015/05/google-app-engine/",
+        "date"     : "May 04, 2015",
+        "summary"  : "Para el fin de semestre tengo varios proyectos por entregar, algunos interesantes, otros no tanto, de los que se puede mencionar."
+    },
+
+    {
+        "title"    : "Halt and Catch Fire",
+        "url"     : "/2015/04/halt-and-catch-fire/",
+        "date"     : "April 09, 2015",
+        "summary"  : "Esta semana lei sobre esta serie de AMC que se estrenó el año pasado, la cual se situa en la epoco de los años 80 donde empezó el boom de las computadoras personales."
+    },
+
+    {
+        "title"    : "Probando Prose",
+        "url"     : "/2015/03/probando-prose/",
+        "date"     : "March 29, 2015",
+        "summary"  : "En los ultimos dias he estado jugando un poco con Jekyll para crear este blog."
+    },
+
+    {
+        "title"    : "¡Hola mundo!",
+        "url"     : "/2015/03/hola-mundo/",
+        "date"     : "March 28, 2015",
+        "summary"  : "Hola mundo, empieza este blog, como registro de aprendizaje sobre programación, estoy cursando actualmente la carrera de ingeniería de software, por lo que quiero llevar un registro de lo que vaya aprendiendo o experimentando."
+    }
+
 ]

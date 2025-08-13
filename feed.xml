@@ -1,30 +1,128 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Edgardo Alvarez</title>
+    <description>Programación, tecnología y software libre
+</description>
+    <link>https://edgardoalz.net/</link>
+    <atom:link href="https://edgardoalz.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Aug 2025 01:16:24 -0500</pubDate>
+    <lastBuildDate>Wed, 13 Aug 2025 01:16:24 -0500</lastBuildDate>
+    <generator>Jekyll v4.2.2</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Funtoo GNU/Linux</title>
+        <description>&lt;p&gt;Durante casi 10 años llevo utilizando sistemas operativos &lt;a href=&quot;http://www.gnu.org/&quot;&gt;GNU&lt;/a&gt;/&lt;a href=&quot;http://www.linux.org/&quot;&gt;Linux&lt;/a&gt;, empezando desde los más sencillos de instalar como &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt;, &lt;a href=&quot;https://getfedora.org/&quot;&gt;Fedora&lt;/a&gt;, entre otros y el estar pasando de &lt;strong&gt;distribución&lt;/strong&gt; en distribución me ha servido para ir aprendiendo cada vez más a manejar este tipo de sistemas tipo &lt;strong&gt;Unix&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/gnu-linux.png&quot; alt=&quot;GNU/Linux&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ultimamente tenia instalado &lt;a href=&quot;https://www.archlinux.org/&quot;&gt;Arch Linux&lt;/a&gt;, y estaba bastante contento con este, con diferentes entornos de escritorio como &lt;a href=&quot;https://www.gnome.org&quot;&gt;Gnome&lt;/a&gt;, &lt;a href=&quot;https://www.xfce.org&quot;&gt;Xfce&lt;/a&gt; e incluso manejadores de ventana como &lt;a href=&quot;https://www.openbox.org&quot;&gt;Openbox&lt;/a&gt;, asi fui mejorando mi manejo de la &lt;strong&gt;terminal&lt;/strong&gt; y los archivos de configuración del sistema, hasta llegar a utilizar el &lt;a href=&quot;https://wiki.archlinux.org/index.php/Arch_Build_System&quot;&gt;Arch Build System&lt;/a&gt; para &lt;strong&gt;compilar&lt;/strong&gt; algunos de los paquetes como el propio &lt;strong&gt;kernel&lt;/strong&gt; para obtener un mejor rendimiento.&lt;/p&gt;
+
+&lt;p&gt;Debido a lo anterior y al deseo de seguir aprendiendo más sobre estos sistemas, decidí empezar a utilizar &lt;a href=&quot;http://www.funtoo.org&quot;&gt;Funtoo&lt;/a&gt;, el cual es un derivado de &lt;a href=&quot;http://www.gentoo.org&quot;&gt;Gentoo&lt;/a&gt;, ambos del mismo creador, ya que ademas de mejorar el rendimiento de mi equipo, he podido aprender más sobre el sistema que estoy utilizando y su manera de funcionar, muchos detalles que anteriormente daba por hecho o ignoraba, he llegado a comprender su razón de ser o por que se tiene que hacer de cierta manera.&lt;/p&gt;
+
+&lt;p&gt;Por lo pronto estoy bastante contento con el resultado y todo lo nuevo que he aprendido.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Jan 2016 16:49:19 -0600</pubDate>
+        <link>https://edgardoalz.net/2016/01/funtoo-gnu-linux/</link>
+        <guid isPermaLink="true">https://edgardoalz.net/2016/01/funtoo-gnu-linux/</guid>
+        
+        
+        <category>gnu</category>
+        
+        <category>linux</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Google App Engine</title>
+        <description>&lt;p&gt;Para el fin de semestre tengo varios proyectos por entregar, algunos interesantes, otros no tanto, de los que se puede mencionar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/google-app-engine.png&quot; alt=&quot;Google App Engine&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En clase de programación orientada a objetos se nos encargo hacer un videojuego, en el que implementemos todos los conceptos aprendidos en clase.&lt;/p&gt;
+
+&lt;p&gt;Por otra parte tuvimos que realizar un proyecto de ingenieria de software en el que debiamos tener a un cliente (empresa o profesionista) al que desarrollaramos una aplicación (o modulo dependiendo de la complejidad) y por mi parte elegí realizar una aplicación web.&lt;/p&gt;
+
+&lt;p&gt;Desde hace tiempo tenia la curiosidad por utilizar &lt;a href=&quot;https://appengine.google.com&quot;&gt;Google App Engine&lt;/a&gt; y como lenguaje utilizare &lt;a href=&quot;http://golang.org&quot;&gt;Go&lt;/a&gt; ademas de Cloud Datastorage para la base de datos, por lo que he estado aprendiendo diversas cosas muy interesantes.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 May 2015 16:50:21 -0500</pubDate>
+        <link>https://edgardoalz.net/2015/05/google-app-engine/</link>
+        <guid isPermaLink="true">https://edgardoalz.net/2015/05/google-app-engine/</guid>
+        
+        
+        <category>programacion</category>
+        
+        <category>universidad</category>
+        
+      </item>
+    
+      <item>
+        <title>Halt and Catch Fire</title>
+        <description>&lt;p&gt;Esta semana &lt;a href=&quot;https://geekytheory.com/un-referente-geek-cameron-howe/&quot;&gt;lei&lt;/a&gt; sobre &lt;a href=&quot;http://www.amctv.com/shows/halt-and-catch-fire&quot;&gt;esta serie de AMC&lt;/a&gt; que se estrenó el año pasado.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/halt-catch-fire.jpg&quot; alt=&quot;Halt and Catch Fire&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La cual se situa en la epoca de los años 80 donde empezó el boom de las computadoras personales, muchos entusiastas y empresas, como los protagonistas de la serie se aventuraron a crear su propia computadora.&lt;/p&gt;
+
+&lt;p&gt;Tiene todos los elementos como para convertirse en una serie de culto para los apasiandos de la computación, por lo que la recomiendo enormemente. Solamente cuenta con una temporada hasta el momento pero ya esta anunciada una segunda para este verano.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Apr 2015 10:04:20 -0500</pubDate>
+        <link>https://edgardoalz.net/2015/04/halt-and-catch-fire/</link>
+        <guid isPermaLink="true">https://edgardoalz.net/2015/04/halt-and-catch-fire/</guid>
+        
+        
+        <category>serie</category>
+        
+        <category>computacion</category>
+        
+      </item>
+    
+      <item>
+        <title>Probando Prose</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/prose.png&quot; alt=&quot;Prose&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En los ultimos dias he estado jugando un poco con &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; para crear este blog.&lt;/p&gt;
+
+&lt;p&gt;Recientemente descubri &lt;a href=&quot;http://prose.io&quot;&gt;Prose&lt;/a&gt; que te ofrece una interfase, al estilo CMS para gestionar sitios creados en Jekyll o en general proyectos que se generen a partir de archivos escritos en &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 29 Mar 2015 12:14:20 -0500</pubDate>
+        <link>https://edgardoalz.net/2015/03/probando-prose/</link>
+        <guid isPermaLink="true">https://edgardoalz.net/2015/03/probando-prose/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>¡Hola mundo!</title>
+        <description>&lt;p&gt;Hola mundo, empieza este blog, como registro de aprendizaje sobre programación, 
+estoy cursando actualmente la carrera de ingeniería de software, por lo que 
+quiero llevar un registro de lo que vaya aprendiendo o experimentando, ademas 
+de publicar algunas curiosidades o información que me parezca interesante con 
+respecto a este tema u otros relacionados con tecnología.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include&lt;/span&gt; &lt;span class=&quot;cpf&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;¡Hola mundo!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Sat, 28 Mar 2015 23:49:19 -0500</pubDate>
+        <link>https://edgardoalz.net/2015/03/hola-mundo/</link>
+        <guid isPermaLink="true">https://edgardoalz.net/2015/03/hola-mundo/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>blog</category>
+        
+      </item>
+    
   </channel>
 </rss>
