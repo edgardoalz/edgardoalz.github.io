@@ -1,0 +1,25 @@
+---
+layout: page
+title: "Buscar"
+permalink: /buscar/
+---
+<!-- <div id="search"></div> -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      resetStyles: false,
+      translations: { placeholder: "Buscar..." }
+    });
+
+    // Si hay parámetro ?q= en la URL, lanzarlo
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+    if (q) {
+      document.querySelector(".pagefind-ui__search-input").value = q;
+      document.querySelector(".pagefind-ui__search-input")
+        .dispatchEvent(new Event("input"));
+    }
+  });
+</script>
