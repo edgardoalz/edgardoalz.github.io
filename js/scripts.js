@@ -36,13 +36,6 @@
     // Ejecutando la funcion
     activePage();
 
-    window.addEventListener('load', function() {
-        new PagefindUI({ 
-            element: "#search",
-            showImages: false
-        });
-    });
-
     window.onload = function (ev) {
         var content = document.querySelector('#contenido');
         content.classList.toggle('fade');

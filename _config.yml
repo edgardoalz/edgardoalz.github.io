@@ -14,7 +14,8 @@ sass:
 # Build settings
 markdown: kramdown
 permalink:    /:year/:month/:title/
-highlighter: rouge 
+highlighter: rouge
+keep_files: [_pagefind] 
 # paginate:     5
 # paginate_path: /pagina-:num/
 
