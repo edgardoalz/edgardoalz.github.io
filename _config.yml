@@ -15,7 +15,13 @@ sass:
 markdown: kramdown
 permalink:    /:year/:month/:title/
 highlighter: rouge
-keep_files: [_pagefind] 
+keep_files: [_pagefind]
+exclude:
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
 # paginate:     5
 # paginate_path: /pagina-:num/
 
