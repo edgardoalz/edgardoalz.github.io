@@ -16,20 +16,21 @@
 	top: -1px;
 }
 
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
 body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	// background: #fafafa;
 	font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif;
-	font-size: 11pt;
+	font-size: 1rem;
 	color: #000;
-	line-height: 1.5;
-}
-html {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+	line-height: 1.6;
 }
 a {
 	color: #00e;
@@ -43,7 +44,8 @@ a {
 }
 pre {
 	font-family: 'IBM Plex Mono', "Courier New", Courier, monospace;
-	font-size: 10pt;
+	font-size: 0.875rem;
+	line-height: 1.5;
 	background-color: #f0f0f0;
 	border: 1px solid #ccc;
 	padding: 10px;
@@ -52,6 +54,7 @@ pre {
 }
 code {
 	font-family: 'IBM Plex Mono', "Courier New", Courier, monospace;
+	font-size: 0.875rem;
 }
 #contenido {
 	margin: 20px;
@@ -69,8 +72,9 @@ code {
 			margin: 0;
 			padding: 0;
 			max-width: 50%;
-			font-size: 18pt;
+			font-size: 1.75rem;
 			font-weight: bold;
+			line-height: 1.3;
 			// &:before {
 			// 	@include pixel-icon("home");
 			// }
@@ -87,7 +91,7 @@ code {
 			display: inline-block;
 			margin: 5px 0 0 0;
 			padding: 0;
-			font-size: 10pt;
+			font-size: 0.875rem;
 			line-height: 1.5;
 			width: 50%;
 			color: #666;
@@ -114,7 +118,7 @@ code {
 					a {
 						color: #00e;
 						font-weight: normal;
-						font-size: 10pt;
+						font-size: 0.875rem;
 						text-decoration: underline;
 					}
 				}
@@ -130,7 +134,7 @@ code {
 				border: 1px solid #999;
 				padding: 3px 5px;
 				margin: 0;
-				font-size: 10pt;
+				font-size: 0.875rem;
 			}
 			input[type="submit"] {
 				font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif;
@@ -138,7 +142,7 @@ code {
 				color: #000;
 				border: 1px solid #999;
 				padding: 3px 10px 3px 24px;
-				font-size: 10pt;
+				font-size: 0.875rem;
 				cursor: pointer;
 				background-image: url("https://unpkg.com/pixelarticons@1.8.1/svg/search.svg");
 				background-repeat: no-repeat;
@@ -158,18 +162,22 @@ code {
 		float: right;
 		article {
 			h2 {
+				font-size: 1.5rem;
+				line-height: 1.3;
+				margin-bottom: 0.75rem;
 				&:before {
 					@include pixel-icon("bookmark");
 				}
 			}
 			p {
-				font-size: 11pt;
-				line-height: 1.5;
+				font-size: 1rem;
+				line-height: 1.6;
 				margin: 10px 0;
 				padding: 0;
 			}
 			ul {
-				line-height: 1.5;
+				font-size: 1rem;
+				line-height: 1.6;
 			}
 		}
 		#contacto {
@@ -197,7 +205,7 @@ code {
 		}
 		.articulo_navegacion {
 			display: block;
-			font-size: 10pt;
+			font-size: 0.875rem;
 			margin: 20px 0;
 			padding: 10px 0;
 			border-top: 1px solid #ccc;
@@ -226,7 +234,7 @@ code {
 			}
 		}
 		article.ultimo_articulo {
-			font-size: 11pt;
+			font-size: 1rem;
 			margin: 15px 0;
 			padding: 0%;
 			width: 100%;
@@ -240,7 +248,7 @@ code {
 			}
 			h2 {
 				line-height: 1.3;
-				font-size: 14pt;
+				font-size: 1.25rem;
 				margin: 0 0 5px 0;
 				padding: 0;
 				font-weight: bold;
@@ -259,14 +267,14 @@ code {
 				font-weight: normal;
 				color: #666;
 				line-height: 1.5;
-				font-size: 9pt;
+				font-size: 1em;
 				&:before {
 					@include pixel-icon("calendar");
 				}
 			}
 			p {
-				font-size: 1em;
-				line-height: 1.4em;
+				font-size: 1rem;
+				line-height: 1.6;
 				margin: 0.5em 0 1em;
 				padding: 0;
 				box-sizing: border-box;
@@ -286,8 +294,8 @@ code {
 				// }
 			}
 			ul {
-				font-size: 1em;
-				line-height: 1.4em;
+				font-size: 1rem;
+				line-height: 1.6;
 			}
 		}
 		article.page-articulos {
@@ -303,11 +311,11 @@ code {
 		#articulos-recientes {
 			.lista_articulos {
 				margin: 15px 0;
-				font-size: 11pt;
-				line-height: 1.5;
+				font-size: 1rem;
+				line-height: 1.6;
 				h3 {
 					display: inline;
-					font-size: 11pt;
+					font-size: 1rem;
 					font-weight: bold;
 					&:before {
 						@include pixel-icon("article");
@@ -319,7 +327,7 @@ code {
 				}
 				span.fecha_articulo {
 					padding: 0;
-					font-size: 9pt;
+					font-size: 0.8125rem;
 					font-weight: normal;
 					color: #666;
 					&:before {
@@ -332,8 +340,8 @@ code {
 				}
 				p {
 					display: inline;
-					font-size: 11pt;
-					line-height: 1.5;
+					font-size: 1rem;
+					line-height: 1.6;
 					a.seguir_leyendo {
 						font-weight: normal;
 						&:after {
@@ -357,16 +365,19 @@ code {
 		float: left;
 		width: calc(18% - 40px);
 		padding: 15px 20px;
-		font-size: 10pt;
+		font-size: 0.875rem;
+		line-height: 1.5;
 		margin: 0;
 		h3 {
 			margin: 10px 0;
 			font-weight: bold;
-			font-size: 10pt;
+			font-size: 0.875rem;
+			line-height: 1.4;
 		}
 		p {
 			margin: 10px 0;
 			padding: 0;
+			font-size: 0.875rem;
 		}
 		ul {
 			list-style: none;
@@ -400,7 +411,8 @@ code {
 	footer {
 		border-top: 1px solid #ccc;
 		color: #666;
-		font-size: 9pt;
+		font-size: 0.875rem;
+		line-height: 1.5;
 		clear: both;
 		overflow: hidden;
 		padding: 15px 20px;
@@ -439,7 +451,7 @@ code {
 		width: auto !important;
 		min-width: 200px !important;
 		padding: 3px 5px 3px 24px !important;
-		font-size: 10pt !important;
+		font-size: 0.875rem !important;
 		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif !important;
 		border: 1px solid #999 !important;
 		border-radius: 0 !important;
@@ -466,7 +478,7 @@ code {
 		align-items: center !important;
 		justify-content: center !important;
 		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif !important;
-		font-size: 10pt !important;
+		font-size: 0.875rem !important;
 		background: #ddd !important;
 		color: #000 !important;
 		border: 1px solid #999 !important;
@@ -545,8 +557,8 @@ code {
 		border: 0;
 		display: block !important;
 		visibility: visible !important;
-		font-size: 11pt;
-		line-height: 1.5;
+		font-size: 1rem;
+		line-height: 1.6;
 	}
 
 	.pagefind-ui__result-thumb {
@@ -563,7 +575,7 @@ code {
 
 	.pagefind-ui__result-title {
 		display: inline !important;
-		font-size: 11pt !important;
+		font-size: 1rem !important;
 		font-weight: bold !important;
 		margin: 0 !important;
 
@@ -588,9 +600,9 @@ code {
 
 	.pagefind-ui__result-excerpt {
 		display: inline !important;
-		font-size: 11pt !important;
+		font-size: 1rem !important;
 		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif !important;
-		line-height: 1.5 !important;
+		line-height: 1.6 !important;
 		color: #000 !important;
 		margin: 0 !important;
 		padding: 0 !important;
@@ -608,15 +620,16 @@ code {
 	}
 
 	.pagefind-ui__message {
-		font-size: 10pt;
+		font-size: 0.875rem;
 		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif;
 		color: #666;
 		padding: 10px 0;
+		line-height: 1.5;
 	}
 
 	.pagefind-ui__button {
 		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif;
-		font-size: 10pt;
+		font-size: 0.875rem;
 		background: #ddd;
 		color: #000;
 		border: 1px solid #999;
@@ -634,19 +647,22 @@ code {
 .right {
 	float: right;
 }
-.toFade {
-	opacity: 1;
-	transition: opacity 1s; 
-}
-.fade {
-	opacity:0;
-}
+// .toFade {
+// 	opacity: 1;
+// 	transition: opacity 1s; 
+// }
+// .fade {
+// 	opacity:0;
+// }
 
 @media (max-width: 640px) {
+	body {
+		font-size: 16px;
+	}
 	#contenido {
 		margin: 0;
 		max-width: 100%;
-		font-size: 1.2em;
+		font-size: 1rem;
 		box-sizing: border-box;
 		header {
 			box-sizing: border-box;
@@ -655,14 +671,16 @@ code {
 				min-width: 100%;
 				max-width: 100%;
 				text-align: center;
-				font-size: 2em;
+				font-size: 1.5rem;
+				line-height: 1.2;
 			}
 			p.subtitulo {
 				display: inline-block;
 				min-width: 100%;
 				max-width: 100%;
 				text-align: center;
-				font-size: 1.2em;
+				font-size: 0.875rem;
+				line-height: 1.4;
 			}
 			nav {
 				display: inline-block;
@@ -671,6 +689,7 @@ code {
 				max-width: 100%;
 				text-align: center;
 				vertical-align: top;
+				font-size: 0.875rem;
 			}
 			form {
 				display: block;
@@ -681,12 +700,15 @@ code {
 				text-align: center;
 				vertical-align: top;
 				box-sizing: border-box;
+				font-size: 0.875rem;
 				input[type="text"] {
 					max-width: 60%;
 					box-sizing: border-box;
+					font-size: 1rem;
 				}
 				input[type="submit"] {
 					box-sizing: border-box;
+					font-size: 1rem;
 				}
 			}
 		}
@@ -695,28 +717,92 @@ code {
 			width: 100%;
 			box-sizing: border-box;
 			padding: 15px 10px;
-			article {
+			> p, p {
+				font-size: 1.125rem;
+				line-height: 1.6;
+			}
+			> ul, > ol, ul, ol {
+				font-size: 1.125rem;
+				line-height: 1.6;
+			}
+			> h2, h2 {
+				font-size: 1.75rem;
+				line-height: 1.3;
+				margin-bottom: 0.5rem;
+			}
+			> h3, h3 {
+				font-size: 1.375rem;
+				line-height: 1.3;
+			}
+			li {
+				font-size: 1rem;
+				line-height: 1.6;
+				margin-bottom: 0.5rem;
+			}
+			article.ultimo_articulo {
 				h2 {
-					font-size: 1.4em;
+					font-size: 1.5rem;
+					line-height: 1.3;
+				}
+				span.fecha_articulo {
+					font-size: 0.875rem;
+					line-height: 1.4;
 				}
 				p {
-					font-size: 1.2em;
-				}
-			}
-			.lista_articulos {
-				p {
-					font-size: 1.2em;
-				}
-			}
-			.ultimo_articulo {
-				p {
-					font-size: 1.1em;
+					font-size: 1.125rem;
+					line-height: 1.6;
 					img {
 						max-width: 100%;
 						height: auto;
 						float: none;
 						display: block;
 						margin: 10px 0;
+					}
+				}
+				ul {
+					font-size: 1.125rem;
+					line-height: 1.6;
+				}
+			}
+			article.page-articulos {
+				h2 {
+					font-size: 1.75rem;
+					line-height: 1.3;
+				}
+				p {
+					font-size: 1.125rem;
+					line-height: 1.6;
+				}
+			}
+			article.page-buscar {
+				h2 {
+					font-size: 1.75rem;
+					line-height: 1.3;
+				}
+				p {
+					font-size: 1.125rem;
+					line-height: 1.6;
+				}
+			}
+			#articulos-recientes {
+				.lista_articulos {
+					h3 {
+						font-size: 1.125rem;
+						line-height: 1.4;
+					}
+					span.fecha_articulo {
+						font-size: 0.875rem;
+						line-height: 1.4;
+					}
+					p {
+						font-size: 1.125rem;
+						line-height: 1.6;
+					}
+				}
+				.mas_articulos {
+					font-size: 1rem;
+					a {
+						font-size: 1rem;
 					}
 				}
 			}
@@ -726,7 +812,8 @@ code {
 			display: block;
 			padding: 15px 10px;
 			box-sizing: border-box;
-			font-size: 0.9em;
+			font-size: 0.875rem;
+			line-height: 1.5;
 			margin: 0;
 			text-align: center;
 			ul {
@@ -738,8 +825,14 @@ code {
 					margin-right: 2px;
 					padding: 2px 10px;
 					text-align: center;
+					font-size: 0.875rem;
 				}
 			}
+		}
+		footer {
+			font-size: 0.875rem;
+			line-height: 1.5;
+			padding: 15px 10px;
 		}
 	}
 }
