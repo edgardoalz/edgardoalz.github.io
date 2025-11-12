@@ -6,9 +6,9 @@ summary:    Esta semana lei sobre esta serie de AMC que se estrenó el año pasa
 categories: serie computacion
 ---
 
-Esta semana [lei](https://geekytheory.com/un-referente-geek-cameron-howe/) sobre [esta serie de AMC](http://www.amctv.com/shows/halt-and-catch-fire) que se estrenó el año pasado. 
+Esta semana [lei](https://geekytheory.com/un-referente-geek-cameron-howe/) sobre [esta serie de AMC](http://www.amctv.com/shows/halt-and-catch-fire) que se estrenó el año pasado.
 
-![Halt and Catch Fire](/img/halt-catch-fire.jpg){:class="img-responsive"}
+<img src="/img/halt-catch-fire.jpg" alt="Halt and Catch Fire - Serie sobre la revolución de las computadoras personales" loading="lazy" decoding="async">
 
 La cual se situa en la epoca de los años 80 donde empezó el boom de las computadoras personales, muchos entusiastas y empresas, como los protagonistas de la serie se aventuraron a crear su propia computadora.
 

@@ -8,7 +8,7 @@ categories: programacion universidad
 
 Para el fin de semestre tengo varios proyectos por entregar, algunos interesantes, otros no tanto, de los que se puede mencionar.
 
-![Google App Engine](/img/google-app-engine.png){:class="img-responsive"}
+<img src="/img/google-app-engine.png" alt="Google App Engine - Plataforma de desarrollo de aplicaciones" loading="lazy" decoding="async">
 
 En clase de programación orientada a objetos se nos encargo hacer un videojuego, en el que implementemos todos los conceptos aprendidos en clase.
 

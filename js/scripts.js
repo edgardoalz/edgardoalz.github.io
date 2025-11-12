@@ -41,6 +41,28 @@
     //     content.classList.toggle('fade');
     // }
 
+    // Image optimization: Add lazy loading and async decoding to all images
+    function optimizeImages() {
+        var images = document.querySelectorAll('img');
+        images.forEach(function(img) {
+            // Add lazy loading if not already set
+            if (!img.hasAttribute('loading')) {
+                img.setAttribute('loading', 'lazy');
+            }
+            // Add async decoding for better performance
+            if (!img.hasAttribute('decoding')) {
+                img.setAttribute('decoding', 'async');
+            }
+        });
+    }
+
+    // Run on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', optimizeImages);
+    } else {
+        optimizeImages();
+    }
+
 })();
 
 

@@ -6,7 +6,7 @@ summary:    En los ultimos dias he estado jugando un poco con Jekyll para crear 
 categories: jekyll blog
 ---
 
-![Prose](/img/prose.png){:img-responsive}
+<img src="/img/prose.png" alt="Prose - Editor de contenido para Jekyll" loading="lazy" decoding="async">
 
 En los ultimos dias he estado jugando un poco con [Jekyll](http://jekyllrb.com) para crear este blog.
 

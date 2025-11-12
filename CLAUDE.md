@@ -25,13 +25,15 @@ A static blog built with Jekyll, featuring a minimalist design with Pagefind sea
 
 ## Commands
 
-- `make serve` - Build site, generate search index, and start development server
+- `make serve` - Build site, minify JS, generate search index, and start development server
 - `make build` - Build site with future posts enabled
+- `make minify` - Minify JavaScript files (reduces file size by ~70%)
 - `make search` - Generate Pagefind search index
 - `make clean` - Remove _site and .jekyll-cache directories
-- `make rebuild` - Clean, build, and regenerate search index
+- `make rebuild` - Clean, build, minify JS, and regenerate search index
 - `jekyll serve` - Start Jekyll development server (http://127.0.0.1:4000)
 - `jekyll build --future` - Build site including future-dated posts
+- `npx terser _site/js/scripts.js -c -m -o _site/js/scripts.js` - Minify JavaScript manually
 - `npx pagefind --site _site --output-subdir _pagefind` - Generate search index manually
 
 ## Site Configuration
@@ -82,6 +84,15 @@ A static blog built with Jekyll, featuring a minimalist design with Pagefind sea
 - Custom styling to match site aesthetic (no default Pagefind UI)
 - Search results display: inline titles with article icons, highlighted matches, no thumbnails
 - Results styled to match homepage post list format
+
+## JavaScript Optimization
+
+- **Minification**: JavaScript files are automatically minified during build using Terser
+- **Size reduction**: ~70% reduction in file size (2KB → 685 bytes for scripts.js)
+- **Build process**: Minification runs after Jekyll build and before Pagefind indexing
+- **Tools**: Uses Terser with compression (-c) and mangling (-m) enabled
+- **Deployment**: Automatic minification in GitHub Actions workflow
+- **Features preserved**: Image lazy loading, async decoding, active page highlighting
 
 ## Workflow
 
