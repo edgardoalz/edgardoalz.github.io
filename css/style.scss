@@ -21,7 +21,7 @@ body {
 	margin: 0;
 	padding: 0;
 	// background: #fafafa;
-	font-family: Verdana, Arial, sans-serif;
+	font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif;
 	font-size: 11pt;
 	color: #000;
 	line-height: 1.5;
@@ -42,13 +42,16 @@ a {
 	}
 }
 pre {
-	font-family: "Courier New", Courier, monospace;
+	font-family: 'IBM Plex Mono', "Courier New", Courier, monospace;
 	font-size: 10pt;
 	background-color: #f0f0f0;
 	border: 1px solid #ccc;
 	padding: 10px;
 	margin: 10px 0;
 	overflow-x: auto;
+}
+code {
+	font-family: 'IBM Plex Mono', "Courier New", Courier, monospace;
 }
 #contenido {
 	margin: 20px;
@@ -123,14 +126,14 @@ pre {
 			max-width: 50%;
 			padding: 0;
 			input[type="text"] {
-				font-family: Verdana, Arial, sans-serif;
+				font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif;
 				border: 1px solid #999;
 				padding: 3px 5px;
 				margin: 0;
 				font-size: 10pt;
 			}
 			input[type="submit"] {
-				font-family: Verdana, Arial, sans-serif;
+				font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif;
 				background: #ddd;
 				color: #000;
 				border: 1px solid #999;
@@ -437,7 +440,7 @@ pre {
 		min-width: 200px !important;
 		padding: 3px 5px 3px 24px !important;
 		font-size: 10pt !important;
-		font-family: Verdana, Arial, sans-serif !important;
+		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif !important;
 		border: 1px solid #999 !important;
 		border-radius: 0 !important;
 		background: #fff !important;
@@ -462,7 +465,7 @@ pre {
 		display: inline-flex !important;
 		align-items: center !important;
 		justify-content: center !important;
-		font-family: Verdana, Arial, sans-serif !important;
+		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif !important;
 		font-size: 10pt !important;
 		background: #ddd !important;
 		color: #000 !important;
@@ -586,7 +589,7 @@ pre {
 	.pagefind-ui__result-excerpt {
 		display: inline !important;
 		font-size: 11pt !important;
-		font-family: Verdana, Arial, sans-serif !important;
+		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif !important;
 		line-height: 1.5 !important;
 		color: #000 !important;
 		margin: 0 !important;
@@ -606,13 +609,13 @@ pre {
 
 	.pagefind-ui__message {
 		font-size: 10pt;
-		font-family: Verdana, Arial, sans-serif;
+		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif;
 		color: #666;
 		padding: 10px 0;
 	}
 
 	.pagefind-ui__button {
-		font-family: Verdana, Arial, sans-serif;
+		font-family: 'IBM Plex Sans', Verdana, Arial, sans-serif;
 		font-size: 10pt;
 		background: #ddd;
 		color: #000;
