@@ -56,6 +56,22 @@ code {
 	font-family: 'IBM Plex Mono', "Courier New", Courier, monospace;
 	font-size: 0.875rem;
 }
+// Global image optimization
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: bicubic;
+}
+// High-DPI (Retina) displays
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	img {
+		image-rendering: -webkit-optimize-contrast;
+		image-rendering: auto;
+	}
+}
 #contenido {
 	margin: 20px;
 	max-width: 890px;
@@ -245,6 +261,7 @@ code {
 				height: auto;
 				float: right;
 				margin: 0 0 10px 10px;
+				display: inline-block;
 			}
 			h2 {
 				line-height: 1.3;
@@ -283,6 +300,7 @@ code {
 					height: auto;
 					float: right;
 					margin: 0 0 10px 10px;
+					display: inline-block;
 				}
 				// a {
 				// 	border-bottom: 1px solid #ddd;
@@ -810,9 +828,9 @@ code {
 		aside {
 			width: 100%;
 			display: block;
-			padding: 15px 10px;
+			padding: 15px 5px;
 			box-sizing: border-box;
-			font-size: 0.875rem;
+			font-size: 0.8125rem;
 			line-height: 1.5;
 			margin: 0;
 			text-align: center;
@@ -821,16 +839,16 @@ code {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
-				gap: 8px;
+				gap: 4px;
 				margin: 0;
 				padding: 0;
 				li {
 					display: inline-block;
 					list-style: none;
 					margin: 0;
-					padding: 4px 8px;
+					padding: 4px 5px;
 					text-align: center;
-					font-size: 0.875rem;
+					font-size: 0.8125rem;
 					white-space: nowrap;
 				}
 			}

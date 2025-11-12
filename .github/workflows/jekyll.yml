@@ -45,9 +45,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Setup Pagefind
+      - name: Minify JavaScript
         run: |
           sudo chown -R $USER:$USER _site
+          npm install terser
+          npx terser _site/js/scripts.js -c -m -o _site/js/scripts.js
+      - name: Setup Pagefind
+        run: |
           npm install pagefind
           npx pagefind --source _site
       - name: Upload artifact
