@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="ultimo_articulo">
+<article class="ultimo_articulo page-{{ page.permalink | replace: '/', '' }}">
     <h2>{{ page.title }}</h2>
     {{ content }}
 </article>

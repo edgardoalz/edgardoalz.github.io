@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<article class="ultimo_articulo">
-  <h2>{{ page.title }}</h2>
+<article class="ultimo_articulo" data-pagefind-body>
+  <h2 data-pagefind-meta="title">{{ page.title }}</h2>
   <span class="fecha_articulo">{{ page.date | date: "%d " }}{% include month.html %}{{ page.date | date: " %Y" }}</span>
   {{ content }}
     <!-- <div>

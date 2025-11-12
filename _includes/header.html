@@ -2,9 +2,8 @@
   <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
   <p class="subtitulo">{{ site.description }}</p>
 
-  <!-- <div id="search"></div> -->
-  <form>
-    <input id="searchTxt" type="text" value="">
-    <input id="searchBtn" type="button" value="Buscar">
+  <form action="/buscar/">
+    <input id="searchTxt" name="q" type="text" value="">
+    <input id="searchBtn" type="submit" value="Buscar">
   </form>
 </header>
