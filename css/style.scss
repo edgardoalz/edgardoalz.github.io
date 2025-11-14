@@ -56,22 +56,6 @@ code {
 	font-family: 'IBM Plex Mono', "Courier New", Courier, monospace;
 	font-size: 0.875rem;
 }
-// Global image optimization
-img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-	image-rendering: -webkit-optimize-contrast;
-	image-rendering: crisp-edges;
-	-ms-interpolation-mode: bicubic;
-}
-// High-DPI (Retina) displays
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	img {
-		image-rendering: -webkit-optimize-contrast;
-		image-rendering: auto;
-	}
-}
 #contenido {
 	margin: 20px;
 	max-width: 890px;
