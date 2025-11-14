@@ -11,6 +11,7 @@ A static blog built with Jekyll, featuring a minimalist design with Pagefind sea
 - **Search**: Pagefind 1.4.0 (static site search)
 - **Icons**: Pixelarticons via CDN
 - **Build Tool**: Make
+- **Code Quality**: Prettier with Liquid plugin (formatting), ESLint (JS linting), Stylelint (CSS/SCSS linting), markdownlint (Markdown linting)
 
 ## Project Structure
 
@@ -21,16 +22,31 @@ A static blog built with Jekyll, featuring a minimalist design with Pagefind sea
 - `js/` - JavaScript files
 - `img/` - Images and icons
 - `_site/` - Generated static site output (git ignored)
-- `_pagefind/` - Generated search index (preserved via keep_files in _config.yml)
+- `_pagefind/` - Generated search index (preserved via keep_files in \_config.yml)
 
 ## Commands
+
+### Build & Serve
 
 - `make serve` - Build site, minify JS, generate search index, and start development server
 - `make build` - Build site with future posts enabled
 - `make minify` - Minify JavaScript files (reduces file size by ~70%)
 - `make search` - Generate Pagefind search index
-- `make clean` - Remove _site and .jekyll-cache directories
+- `make clean` - Remove \_site and .jekyll-cache directories
 - `make rebuild` - Clean, build, minify JS, and regenerate search index
+
+### Code Quality
+
+- `make lint` - Run all linters (JavaScript, CSS/SCSS, and Markdown)
+- `make lint-js` - Lint JavaScript files with ESLint
+- `make lint-css` - Lint CSS/SCSS files with Stylelint
+- `make lint-md` - Lint Markdown files with markdownlint
+- `make format` - Format all files with Prettier
+- `make format-check` - Check formatting without making changes
+- `make fix` - Auto-fix all linting and formatting issues
+
+### Manual Commands
+
 - `jekyll serve` - Start Jekyll development server (http://127.0.0.1:4000)
 - `jekyll build --future` - Build site including future-dated posts
 - `npx terser _site/js/scripts.js -c -m -o _site/js/scripts.js` - Minify JavaScript manually
@@ -46,6 +62,7 @@ A static blog built with Jekyll, featuring a minimalist design with Pagefind sea
 ## Code Style & Conventions
 
 ### SCSS/CSS
+
 - Use SCSS syntax with nesting
 - Include pixel-icon mixin for consistent icon styling
 - Maintain compressed output style
@@ -54,17 +71,20 @@ A static blog built with Jekyll, featuring a minimalist design with Pagefind sea
 - Font stack: Verdana, Arial, sans-serif at 11pt for body, 10pt for smaller elements
 
 ### HTML/Liquid Templates
+
 - Use semantic HTML5 elements (header, nav, section, aside, article, footer)
 - Pagefind attributes: `data-pagefind-body` only on post.html article element
 - Use `data-pagefind-meta="title"` for post titles
 - Keep layouts minimal and reusable via includes
 
 ### JavaScript
+
 - Vanilla JavaScript, no frameworks
 - PagefindUI initialization in search.html with Spanish translations
 - URL parameter handling for search queries (?q=)
 
 ### Markdown Posts
+
 - YAML frontmatter required: layout, title, date, categories
 - Date format: YYYY-MM-DD HH:MM:SS
 - Categories as array in frontmatter
@@ -94,26 +114,65 @@ A static blog built with Jekyll, featuring a minimalist design with Pagefind sea
 - **Deployment**: Automatic minification in GitHub Actions workflow
 - **Features preserved**: Image lazy loading, async decoding, active page highlighting
 
+## Code Quality Tools
+
+### Linting
+
+- **ESLint v9**: Lints JavaScript files in `js/` directory
+  - Configuration: `eslint.config.mjs` (flat config format)
+  - Uses `@eslint/js` for recommended rules and `globals` for environment definitions
+  - Enforces consistent code style, catches common errors
+  - Auto-fix available via `make fix` or `npx eslint --fix`
+- **Stylelint**: Lints CSS/SCSS files in `css/` directory
+  - Configuration: `.stylelintrc.json`
+  - Uses `stylelint-config-standard-scss` preset
+  - Auto-fix available via `make fix` or `npx stylelint --fix`
+- **markdownlint**: Lints Markdown files (posts, documentation)
+  - Configuration: `.markdownlint.json` and `.markdownlintignore`
+  - Ensures consistent Markdown formatting
+  - Auto-fix available via `make fix` or `npx markdownlint --fix`
+
+### Formatting
+
+- **Prettier**: Formats HTML, CSS, SCSS, JavaScript, and Markdown files
+  - Configuration: `.prettierrc.json` and `.prettierignore`
+  - Uses `@shopify/prettier-plugin-liquid` to properly format Jekyll/Liquid templates
+  - Enforces consistent code formatting across all file types
+  - Run `make format-check` to check without modifying files
+  - Run `make format` to auto-format all files
+  - Integrated with `make fix` for complete code cleanup
+
+### Workflow Integration
+
+- Run `make lint` before committing to catch issues early
+- Run `make fix` to automatically resolve most linting and formatting issues
+- All linters and formatters ignore generated directories (`_site/`, `_pagefind/`, etc.)
+- Configuration files can be customized to match project preferences
+
 ## Workflow
 
 ### Adding New Posts
+
 1. Create markdown file in `_posts/` with format: `YYYY-MM-DD-title.md`
 2. Add required frontmatter (layout: post, title, date, categories)
 3. Run `make serve` to build and test locally
 4. Search index auto-updates on rebuild
 
 ### Modifying Styles
+
 1. Edit SCSS files in `css/` directory
 2. Jekyll automatically recompiles on save during `jekyll serve`
 3. Check compiled output in `_site/css/style.css`
 4. Test in browser at http://127.0.0.1:4000
 
 ### Updating Search
+
 1. After content changes, run `make search` or include in `make serve`
 2. Search index stored in `_site/_pagefind/`
-3. Ensure `keep_files: [_pagefind]` remains in _config.yml
+3. Ensure `keep_files: [_pagefind]` remains in \_config.yml
 
 ### Testing
+
 1. Use Playwright for JavaScript-rendered components (search UI)
 2. Test search functionality with actual queries
 3. Verify responsive design at 640px breakpoint
@@ -122,7 +181,7 @@ A static blog built with Jekyll, featuring a minimalist design with Pagefind sea
 ## Do Not
 
 - Do not edit files in `_site/` or `.jekyll-cache/` (auto-generated)
-- Do not remove `keep_files: [_pagefind]` from _config.yml
+- Do not remove `keep_files: [_pagefind]` from \_config.yml
 - Do not change font families or sizes without consultation (consistent retro aesthetic)
 - Do not add JavaScript frameworks or heavy dependencies
 - Do not modify Pagefind's internal structure in `_pagefind/`
