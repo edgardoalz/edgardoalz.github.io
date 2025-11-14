@@ -399,7 +399,7 @@ code {
 					font-weight: normal;
 				}
 				&:last-child:before {
-					@include pixel-icon("radio-signal");
+					@include pixel-icon("cast");
 				}
 			}
 			li.activo {
@@ -423,7 +423,7 @@ code {
 		}
 		.licencia {
 			&:before {
-				@include pixel-icon("script");
+				@include pixel-icon("subtitles");
 			}
 		}
 		.arriba {
@@ -657,7 +657,7 @@ code {
 	opacity:0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 750px) {
 	body {
 		font-size: 16px;
 	}
