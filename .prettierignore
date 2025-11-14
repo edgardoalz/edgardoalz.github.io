@@ -1,0 +1,7 @@
+_site/
+.jekyll-cache/
+_pagefind/
+vendor/
+node_modules/
+*.min.js
+*.min.css

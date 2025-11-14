@@ -1,0 +1,18 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "double",
+    "selector-class-pattern": null,
+    "scss/at-rule-no-unknown": null,
+    "no-descending-specificity": null,
+    "declaration-block-no-redundant-longhand-properties": null
+  },
+  "ignoreFiles": [
+    "_site/**/*",
+    ".jekyll-cache/**/*",
+    "_pagefind/**/*",
+    "node_modules/**/*",
+    "**/*.min.css"
+  ]
+}
