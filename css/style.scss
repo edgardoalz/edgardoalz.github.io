@@ -665,13 +665,13 @@ img {
 .right {
 	float: right;
 }
-// .toFade {
-// 	opacity: 1;
-// 	transition: opacity 1s; 
-// }
-// .fade {
-// 	opacity:0;
-// }
+.toFade {
+	opacity: 1;
+	transition: opacity 1s;
+}
+.fade {
+	opacity:0;
+}
 
 @media (max-width: 640px) {
 	body {

@@ -36,10 +36,10 @@
     // Ejecutando la funcion
     activePage();
 
-    // window.onload = function (ev) {
-    //     var content = document.querySelector('#contenido');
-    //     content.classList.toggle('fade');
-    // }
+    window.onload = function (ev) {
+        var content = document.querySelector('#contenido');
+        content.classList.toggle('fade');
+    }
 
     // Image optimization: Add lazy loading and async decoding to all images
     function optimizeImages() {
