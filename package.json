@@ -4,7 +4,7 @@
     "@shopify/prettier-plugin-liquid": "^1.10.0",
     "eslint": "^9.39.1",
     "globals": "^16.5.0",
-    "markdownlint-cli": "^0.45.0",
+    "markdownlint-cli": "^0.47.0",
     "playwright": "^1.56.1",
     "prettier": "^3.6.2",
     "stylelint": "^16.25.0",
