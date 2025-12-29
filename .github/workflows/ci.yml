@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  pull_request:
+    branches: ["**"]
+  push:
+    branches: ["**"]
+    paths-ignore:
+      - "master"
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: false
+
+      - name: Install Jekyll
+        run: |
+          gem install jekyll bundler
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run linters
+        run: make lint
+
+      - name: Check code formatting
+        run: make format-check
+
+      - name: Build Jekyll site
+        run: make build
+
+      - name: Minify JavaScript
+        run: make minify
+
+      - name: Generate search index
+        run: make search
