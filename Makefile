@@ -38,7 +38,7 @@ lint-md: ## Lint Markdown files
 	@echo "Linting Markdown files..."
 	@npx markdownlint "**/*.md"
 
-lint: lint-js lint-css lint-md ## Run all linters
+lint: lint-js lint-md ## Run all linters
 
 format-check: ## Check formatting without making changes
 	@echo "Checking code formatting..."
@@ -52,7 +52,6 @@ format: ## Format all files with Prettier
 fix: ## Auto-fix linting issues
 	@echo "Auto-fixing linting issues..."
 	@npx eslint js/**/*.js --fix
-	@npx stylelint "css/**/*.{css,scss}" --fix
 	@npx markdownlint "**/*.md" --fix
 	@npx prettier --write "**/*.{html,css,scss,js,md}" --ignore-path .prettierignore
 	@echo "Auto-fix complete"

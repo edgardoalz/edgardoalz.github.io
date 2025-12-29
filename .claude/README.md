@@ -5,7 +5,9 @@ This directory contains Claude Code configuration files and custom commands for 
 ## Files
 
 ### CLAUDE.md (project root)
+
 Main project documentation file that Claude reads automatically. Contains:
+
 - Tech stack and dependencies
 - Project structure
 - Available commands
@@ -14,8 +16,10 @@ Main project documentation file that Claude reads automatically. Contains:
 - Design principles
 
 ### .claudeignore (project root)
+
 Specifies files and directories Claude should ignore:
-- Build outputs (_site/, .jekyll-cache/)
+
+- Build outputs (\_site/, .jekyll-cache/)
 - Dependencies (node_modules/)
 - Temporary and test files
 - IDE configurations
@@ -24,6 +28,7 @@ Specifies files and directories Claude should ignore:
 ### Custom Commands (.claude/commands/)
 
 #### /new-post
+
 Creates a new blog post with proper Jekyll frontmatter and naming conventions.
 
 **Usage**: `/new-post`
@@ -31,6 +36,7 @@ Creates a new blog post with proper Jekyll frontmatter and naming conventions.
 Creates a dated post file in `_posts/` and rebuilds the search index.
 
 #### /test-search
+
 Tests the Pagefind search functionality using Playwright.
 
 **Usage**: `/test-search`
@@ -38,6 +44,7 @@ Tests the Pagefind search functionality using Playwright.
 Validates search UI, alignment, results styling, and captures screenshots for verification.
 
 #### /check-site
+
 Performs comprehensive site health check.
 
 **Usage**: `/check-site`

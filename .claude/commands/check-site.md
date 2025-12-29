@@ -10,7 +10,7 @@ Perform a comprehensive site health check:
    - Check that `_pagefind/` index exists in `_site/`
 
 2. **Configuration Check**
-   - Verify `keep_files: [_pagefind]` is in _config.yml
+   - Verify `keep_files: [_pagefind]` is in \_config.yml
    - Check permalink structure is `/:year/:month/:title/`
    - Confirm base URL and site metadata
 
@@ -20,12 +20,12 @@ Perform a comprehensive site health check:
    - Verify only posts are indexed (not other pages)
 
 4. **File Structure Check**
-   - Confirm all required directories exist (_posts, _layouts, _includes, css, js)
+   - Confirm all required directories exist (\_posts, \_layouts, \_includes, css, js)
    - Check for any missing required includes
    - Verify Makefile commands are available
 
 5. **Style Check**
-   - Verify css/style.css is generated in _site/
+   - Verify css/style.css is generated in \_site/
    - Check for SCSS compilation errors
    - Confirm compressed output
 

@@ -5,21 +5,20 @@ permalink: /buscar/
 ---
 <div id="search"></div>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener('DOMContentLoaded', () => {
     new PagefindUI({
-      element: "#search",
+      element: '#search',
       showSubResults: true,
       resetStyles: false,
-      translations: { placeholder: "Buscar..." }
+      translations: { placeholder: 'Buscar...' },
     });
 
     // Si hay parámetro ?q= en la URL, lanzarlo
     const params = new URLSearchParams(window.location.search);
-    const q = params.get("q");
+    const q = params.get('q');
     if (q) {
-      document.querySelector(".pagefind-ui__search-input").value = q;
-      document.querySelector(".pagefind-ui__search-input")
-        .dispatchEvent(new Event("input"));
+      document.querySelector('.pagefind-ui__search-input').value = q;
+      document.querySelector('.pagefind-ui__search-input').dispatchEvent(new Event('input'));
     }
   });
 </script>

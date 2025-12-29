@@ -2,45 +2,58 @@
 layout: default
 ---
 <article id="sobre-mi" class="ultimo_articulo">
-    <!-- <h2>Sobre mí</h2> -->
-    <p>Soy <strong>Edgardo Alvarez</strong>, ingeniero DevOps, con experiencia en orquestación de microservicios con <a href="https://docker.com" target="_blank">Docker</a> y <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>, administrando servidores <a href="https://www.gnu.org">GNU</a>/<a href="https://www.linux.org">Linux</a> y plataformas en la nube como <a href="https://aws.amazon.com" target="_blank">AWS</a>, infraestructura como código con <a href="https://terraform.io" target="_blank">Terraform</a>, configuración como código con <a href="https://www.redhat.com/en/ansible-collaborative" target="_blank">Ansible</a>, autodidacta, apasionado por la automatización y la seguridad, a veces escribo sobre diversos temas, entre ellos, desarrollo, software libre, tecnología, hardware y otros temas que despiertan mi interes.</p>
-
+  <!-- <h2>Sobre mí</h2> -->
+  <p>
+    Soy <strong>Edgardo Alvarez</strong>, ingeniero DevOps, con experiencia en orquestación de microservicios con
+    <a href="https://docker.com" target="_blank">Docker</a> y
+    <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>, administrando servidores
+    <a href="https://www.gnu.org">GNU</a>/<a href="https://www.linux.org">Linux</a> y plataformas en la nube como
+    <a href="https://aws.amazon.com" target="_blank">AWS</a>, infraestructura como código con
+    <a href="https://terraform.io" target="_blank">Terraform</a>, configuración como código con
+    <a href="https://www.redhat.com/en/ansible-collaborative" target="_blank">Ansible</a>, autodidacta, apasionado por
+    la automatización y la seguridad, a veces escribo sobre diversos temas, entre ellos, desarrollo, software libre,
+    tecnología, hardware y otros temas que despiertan mi interes.
+  </p>
 </article>
 
-<article id="contacto" class="ultimo_articulo" >
-    <h2>Contacto</h2>
-    <ul>
-        <li>Email <a href="mailto:edgardoalz@protonmail.com">edgardoalz@protonmail.com</a></li>
-        <li>Github <a href="http://github.com/edgardoalz">@edgardoalz</a></li>
-        <li>Twitter <a href="http://twitter.com/edgardoalz">@edgardoalz</a></li>
-    </ul>
+<article id="contacto" class="ultimo_articulo">
+  <h2>Contacto</h2>
+  <ul>
+    <li>Email <a href="mailto:edgardoalz@protonmail.com">edgardoalz@protonmail.com</a></li>
+    <li>Github <a href="http://github.com/edgardoalz">@edgardoalz</a></li>
+    <li>Twitter <a href="http://twitter.com/edgardoalz">@edgardoalz</a></li>
+  </ul>
 </article>
 
 <article id="herramientas-y-tecnologias" class="ultimo_articulo">
-    <h2>Herramientas y tecnologías</h2>
-    <ul>
-        <li><strong>Lenguajes de programación:</strong> Bash y Python</li>
-        <li><strong>Tecnologías:</strong> Docker, Kubernetes y AWS</li>
-        <li><strong>Bases de datos:</strong> MongoDB y MySQL</li>
-        <li><strong>Herramientas:</strong> Ansible, Terraform y GNU/Linux</li>
-        <li><strong>Otros:</strong> Raspberry Pi</li>
-    </ul>
-
+  <h2>Herramientas y tecnologías</h2>
+  <ul>
+    <li><strong>Lenguajes de programación:</strong> Bash y Python</li>
+    <li><strong>Tecnologías:</strong> Docker, Kubernetes y AWS</li>
+    <li><strong>Bases de datos:</strong> MongoDB y MySQL</li>
+    <li><strong>Herramientas:</strong> Ansible, Terraform y GNU/Linux</li>
+    <li><strong>Otros:</strong> Raspberry Pi</li>
+  </ul>
 </article>
 
 <article id="articulos-recientes" class="ultimo_articulo">
-    <h2>Últimos artículos</h2>
-    {% for post in site.posts limit:3 %}
-        <article class="lista_articulos">
-            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-            <span class="fecha_articulo">{{ post.date | date: "%d " }}{% include month.html %}{{ post.date | date: " %Y" }}</span>
-            {{ post.summary }}
-            <p> <a href="{{ post.url | prepend: site.baseurl }}" class="seguir_leyendo">Seguir leyendo</a></p>
-        </article>
-    {% endfor %}
+  <h2>Últimos artículos</h2>
+  {% for post in site.posts limit: 3 %}
+    <article class="lista_articulos">
+      <h3>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h3>
+      <span class="fecha_articulo">
+        {{- post.date | date: '%d ' -}}
+        {%- include month.html -%}
+        {{- post.date | date: ' %Y' -}}
+      </span>
+      {{ post.summary }}
+      <p><a href="{{ post.url | prepend: site.baseurl }}" class="seguir_leyendo">Seguir leyendo</a></p>
+    </article>
+  {% endfor %}
 
-    <div class="mas_articulos">
-        <a href="{{ "/articulos/" | prepend: site.baseurl }}">Mas articulos</a>
-    </div>
+  <div class="mas_articulos">
+    <a href="{{ "/articulos/" | prepend: site.baseurl }}">Mas articulos</a>
+  </div>
 </article>
-

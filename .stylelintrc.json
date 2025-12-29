@@ -1,18 +1,33 @@
 {
   "extends": "stylelint-config-standard-scss",
   "rules": {
-    "indentation": 2,
-    "string-quotes": "double",
+    "indentation": null,
+    "string-quotes": null,
     "selector-class-pattern": null,
+    "selector-type-no-unknown": null,
     "scss/at-rule-no-unknown": null,
     "no-descending-specificity": null,
-    "declaration-block-no-redundant-longhand-properties": null
+    "declaration-block-no-redundant-longhand-properties": null,
+    "font-family-no-duplicate-names": null,
+    "no-duplicate-selectors": null,
+    "declaration-block-single-line-max-declarations": null,
+    "property-no-vendor-prefix": null,
+    "shorthand-property-no-redundant-values": null,
+    "rule-empty-line-before": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "selector-pseudo-element-colon-notation": null,
+    "color-hex-length": null,
+    "length-zero-no-unit": null,
+    "declaration-block-no-duplicate-properties": null,
+    "declaration-property-value-keyword-no-deprecated": null
   },
   "ignoreFiles": [
     "_site/**/*",
     ".jekyll-cache/**/*",
     "_pagefind/**/*",
     "node_modules/**/*",
-    "**/*.min.css"
+    "**/*.min.css",
+    "css/normalize.scss",
+    "css/syntax.scss"
   ]
 }

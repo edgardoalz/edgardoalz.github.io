@@ -1,8 +1,8 @@
 ---
-layout:     post
-title:      Halt and Catch Fire
-date:       2015-04-09 15:04:20
-summary:    Esta semana lei sobre esta serie de AMC que se estrenó el año pasado, la cual se situa en la epoco de los años 80 donde empezó el boom de las computadoras personales.
+layout: post
+title: Halt and Catch Fire
+date: 2015-04-09 15:04:20
+summary: Esta semana lei sobre esta serie de AMC que se estrenó el año pasado, la cual se situa en la epoco de los años 80 donde empezó el boom de las computadoras personales.
 categories: serie computacion
 ---
 
